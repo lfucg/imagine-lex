@@ -1,0 +1,25 @@
+uuid: 77b30ee9-01f7-40d0-9512-66b00acdfb67
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - imaginelex
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: imaginelex_branding
+theme: imaginelex
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: 4981768e-acf7-4988-9efa-92cc53b8286a
+langcode: en
+status: true
+dependencies:
+  theme:
+    - imaginelex
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: imaginelex_local_actions
+theme: imaginelex
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }
