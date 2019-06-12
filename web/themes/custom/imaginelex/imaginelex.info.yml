@@ -1,0 +1,20 @@
+name: imaginelex
+type: theme
+description: Custom Drupal 8 admin theme for Imagine Lexington
+base theme: adminimal_theme
+
+package: Other
+core: 8.x
+
+regions:
+  main_nav: Main navigation
+  header: Header
+  help: Help
+  breadcrumbs: Breadcrumbs
+  title: Title
+  content: Content
+  sidebar: Sidebar
+  footer: Footer
+
+libraries:
+  - 'imaginelex/global-styling'

@@ -1,0 +1,22 @@
+uuid: 135f8b01-b2c1-4279-9977-423092f4ce6a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - imaginelex
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: imaginelex_powered
+theme: imaginelex
+region: main_nav
+weight: 10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }
