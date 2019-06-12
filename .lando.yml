@@ -1,0 +1,7 @@
+name: imagine-lex
+recipe: pantheon
+config:
+  webroot: web/
+  framework: drupal8
+  site: imagine-lex
+  id: 33061cb0-c6be-46ee-8667-df29cce1ea39
