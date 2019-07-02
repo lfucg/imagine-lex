@@ -1,0 +1,18 @@
+uuid: 51b9bba7-cd7d-4ab1-a3a8-220c5624e775
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.theme
+id: node.theme.title
+field_name: title
+entity_type: node
+bundle: theme
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

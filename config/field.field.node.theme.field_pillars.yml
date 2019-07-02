@@ -1,0 +1,29 @@
+uuid: 3136eb16-489f-4c5f-b334-68bc6796c002
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pillars
+    - node.type.pillar
+    - node.type.theme
+id: node.theme.field_pillars
+field_name: field_pillars
+entity_type: node
+bundle: theme
+label: Pillars
+description: 'Associate Pillars, and subsequently their policies, with a theme.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      pillar: pillar
+    sort:
+      field: title
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -16,10 +16,12 @@
         "drupal-composer/drupal-scaffold": "^2.0.1",
         "drupal/adminimal_admin_toolbar": "^1.9",
         "drupal/adminimal_theme": "^1.5",
+        "drupal/color_field": "^2.0",
         "drupal/config_direct_save": "^1.0",
         "drupal/config_installer": "^1.0",
         "drupal/console": "^1",
         "drupal/core": "^8.6.15",
+        "drupal/inline_entity_form": "1.x-dev",
         "drush-ops/behat-drush-endpoint": "^9.3",
         "drush/drush": "^9",
         "pantheon-systems/quicksilver-pushback": "~1",
@@ -32,7 +34,7 @@
     "conflict": {
             "drupal/drupal": "*"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "autoload": {
         "classmap": [

@@ -1,0 +1,22 @@
+uuid: 825b9a12-e5f3-4e34-9253-ca80551b40b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_color
+    - node.type.theme
+  module:
+    - color_field
+id: node.theme.field_color
+field_name: field_color
+entity_type: node
+bundle: theme
+label: Color
+description: 'Color for the theme (HEX)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

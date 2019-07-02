@@ -1,0 +1,19 @@
+uuid: a24d1222-31dc-4a06-ae42-5f324f90725c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_abbreviation
+    - node.type.pillar
+id: node.pillar.field_abbreviation
+field_name: field_abbreviation
+entity_type: node
+bundle: pillar
+label: Abbreviation
+description: 'Two character abbreviation for the Pillar.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
