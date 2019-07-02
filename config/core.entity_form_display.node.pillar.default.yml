@@ -1,0 +1,76 @@
+uuid: 3b257934-f160-4250-ac0b-1912c617d67c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.pillar.body
+    - field.field.node.pillar.field_abbreviation
+    - field.field.node.pillar.field_icon
+    - field.field.node.pillar.field_policies
+    - image.style.thumbnail
+    - node.type.pillar
+  module:
+    - image
+    - inline_entity_form
+    - text
+id: node.pillar.default
+targetEntityType: node
+bundle: pillar
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 2
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_abbreviation:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_icon:
+    weight: 3
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_policies:
+    weight: 4
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      collapsible: true
+      allow_new: true
+      allow_existing: true
+      match_operator: STARTS_WITH
+      override_labels: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

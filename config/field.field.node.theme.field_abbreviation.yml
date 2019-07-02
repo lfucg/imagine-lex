@@ -1,0 +1,19 @@
+uuid: 1f869673-5061-45b4-a327-53ce530d5e3f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_abbreviation
+    - node.type.theme
+id: node.theme.field_abbreviation
+field_name: field_abbreviation
+entity_type: node
+bundle: theme
+label: Abbreviation
+description: 'Letter for the theme. For example, Neighborhoods is "A".'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

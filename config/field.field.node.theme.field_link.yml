@@ -1,0 +1,23 @@
+uuid: eb1b8379-5ba6-43a9-b6f4-161411ed0490
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link
+    - node.type.theme
+  module:
+    - link
+id: node.theme.field_link
+field_name: field_link
+entity_type: node
+bundle: theme
+label: 'Link to Comprehensive Plan Page'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

@@ -1,0 +1,29 @@
+uuid: 3aacbf82-d395-4fd7-a6b2-60e3d5c1640d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_topics
+    - node.type.policy
+    - taxonomy.vocabulary.topic
+id: node.policy.field_topics
+field_name: field_topics
+entity_type: node
+bundle: policy
+label: Topics
+description: 'Associate this policy to topic(s)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      topic: topic
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

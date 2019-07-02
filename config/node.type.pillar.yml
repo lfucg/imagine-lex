@@ -1,0 +1,17 @@
+uuid: c21416a9-734c-4042-8ca1-e4aca9124a14
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Pillar
+type: pillar
+description: 'Pillars, to be used only within Themes'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

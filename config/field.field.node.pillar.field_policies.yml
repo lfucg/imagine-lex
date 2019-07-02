@@ -1,0 +1,29 @@
+uuid: ff2475eb-3e10-4913-a3f7-db253f5de727
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_policies
+    - node.type.pillar
+    - node.type.policy
+id: node.pillar.field_policies
+field_name: field_policies
+entity_type: node
+bundle: pillar
+label: Policies
+description: 'Associate policies with a theme through the pillars. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      policy: policy
+    sort:
+      field: title
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

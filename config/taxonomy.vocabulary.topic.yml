@@ -1,0 +1,8 @@
+uuid: c4ed8602-17c9-4f3c-bfc0-3fa69f195fc7
+langcode: en
+status: true
+dependencies: {  }
+name: Topic
+vid: topic
+description: 'A vocabulary to group policies under one topic.'
+weight: 0

@@ -1,0 +1,23 @@
+uuid: e7dc264e-dcda-4e65-94b7-60e3138a131a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_policy_number
+    - node.type.policy
+id: node.policy.field_policy_number
+field_name: field_policy_number
+entity_type: node
+bundle: policy
+label: 'Policy Number'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: 100
+  prefix: ''
+  suffix: ''
+field_type: integer
