@@ -1,0 +1,28 @@
+uuid: f27af5e3-6d09-4cc9-bea0-0ad749e8d1ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_development_types
+    - node.type.dev_type
+    - node.type.place_type
+id: node.place_type.field_development_types
+field_name: field_development_types
+entity_type: node
+bundle: place_type
+label: 'Development Types'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      dev_type: dev_type
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

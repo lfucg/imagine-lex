@@ -1,0 +1,24 @@
+uuid: bf96160e-af77-4727-b943-1bd693a71f10
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.dev_type.field_color
+    - field.field.node.dev_type.field_residential
+    - node.type.dev_type
+  module:
+    - user
+id: node.dev_type.teaser
+targetEntityType: node
+bundle: dev_type
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_color: true
+  field_residential: true

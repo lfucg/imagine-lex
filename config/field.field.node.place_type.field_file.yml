@@ -1,0 +1,27 @@
+uuid: 19c50ad3-cfd4-4e31-b5a5-3125f933c3cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file
+    - node.type.place_type
+  module:
+    - file
+id: node.place_type.field_file
+field_name: field_file
+entity_type: node
+bundle: place_type
+label: 'Development Criteria PDFs'
+description: 'Upload PDFs of the Development Criteria for each Place Type for download by the end user. '
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf doc docx xls xlsx'
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

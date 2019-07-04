@@ -1,0 +1,19 @@
+uuid: d15af442-e2b9-4077-a399-6d0ab559c089
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_abbreviation
+    - node.type.dev_type
+id: node.dev_type.field_abbreviation
+field_name: field_abbreviation
+entity_type: node
+bundle: dev_type
+label: Abbreviation
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

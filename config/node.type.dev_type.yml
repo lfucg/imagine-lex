@@ -1,0 +1,17 @@
+uuid: 0757316a-0bfa-4e81-809d-fb4984cb5b2b
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Development Type'
+type: dev_type
+description: 'Development Types for Place Types in the Placebuilder'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

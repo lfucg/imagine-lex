@@ -1,0 +1,83 @@
+uuid: 3c4fb06b-0bb7-4c72-8b14-8f0e7957c1ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.dev_type.field_abbreviation
+    - field.field.node.dev_type.field_color
+    - field.field.node.dev_type.field_images
+    - field.field.node.dev_type.field_land_building_design
+    - field.field.node.dev_type.field_parking_or_qol
+    - field.field.node.dev_type.field_residential
+    - field.field.node.dev_type.field_transit
+    - node.type.dev_type
+  module:
+    - color_field
+    - image
+    - options
+    - user
+id: node.dev_type.default
+targetEntityType: node
+bundle: dev_type
+mode: default
+content:
+  field_abbreviation:
+    weight: 104
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_color:
+    weight: 103
+    label: above
+    settings:
+      format: hex
+      opacity: '1'
+    third_party_settings: {  }
+    type: color_field_formatter_text
+    region: content
+  field_images:
+    weight: 108
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_land_building_design:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_parking_or_qol:
+    weight: 107
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_residential:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_transit:
+    weight: 106
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

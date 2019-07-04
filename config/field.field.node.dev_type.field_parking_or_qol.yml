@@ -1,0 +1,19 @@
+uuid: 7ce03650-7acb-4763-a9c5-5de55a8a634e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_parking_or_qol
+    - node.type.dev_type
+id: node.dev_type.field_parking_or_qol
+field_name: field_parking_or_qol
+entity_type: node
+bundle: dev_type
+label: 'Parking or Quality of Life Considerations'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

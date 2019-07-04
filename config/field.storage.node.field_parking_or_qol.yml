@@ -1,0 +1,19 @@
+uuid: dfe76785-7195-483e-8d14-4dd63efa9d96
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_parking_or_qol
+field_name: field_parking_or_qol
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

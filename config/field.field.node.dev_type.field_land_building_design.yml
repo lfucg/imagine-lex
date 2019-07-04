@@ -1,0 +1,19 @@
+uuid: 18045e1f-1c53-4dc0-92ac-afd0f665c8e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_land_building_design
+    - node.type.dev_type
+id: node.dev_type.field_land_building_design
+field_name: field_land_building_design
+entity_type: node
+bundle: dev_type
+label: 'Primary Land Use, Building Form & Design'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

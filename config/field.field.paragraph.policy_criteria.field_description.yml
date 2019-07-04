@@ -1,0 +1,19 @@
+uuid: 41edbd65-8f45-4384-a333-6d22ebe92ddd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - paragraphs.paragraphs_type.policy_criteria
+id: paragraph.policy_criteria.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: policy_criteria
+label: 'Criteria Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long
