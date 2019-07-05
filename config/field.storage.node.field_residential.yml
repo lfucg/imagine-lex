@@ -1,0 +1,27 @@
+uuid: 0bf2acdb-21fb-4663-bd76-51e7d0bee674
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_residential
+field_name: field_residential
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: res
+      label: Residential
+    -
+      value: nonres
+      label: Non-Residential/Mixed-use
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

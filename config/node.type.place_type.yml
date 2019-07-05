@@ -1,0 +1,17 @@
+uuid: c07810d4-764f-438b-9722-132c549dc557
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Place Type'
+type: place_type
+description: 'Place Types for the Place Builder'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

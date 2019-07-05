@@ -4,12 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.node.policy.body
+    - field.field.node.policy.field_criteria
     - field.field.node.policy.field_file
     - field.field.node.policy.field_policy_number
     - field.field.node.policy.field_topics
     - node.type.policy
   module:
     - file
+    - paragraphs
     - text
 id: node.policy.default
 targetEntityType: node
@@ -18,29 +20,41 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 1
+    weight: 2
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
     third_party_settings: {  }
     region: content
+  field_criteria:
+    type: entity_reference_paragraphs
+    weight: 5
+    settings:
+      title: Criteria
+      title_plural: Criteria
+      edit_mode: open
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: policy_criteria
+    third_party_settings: {  }
+    region: content
   field_file:
-    weight: 3
+    weight: 4
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
     region: content
   field_policy_number:
-    weight: 26
+    weight: 0
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
   field_topics:
-    weight: 2
+    weight: 3
     settings:
       match_operator: CONTAINS
       size: 60
@@ -50,7 +64,7 @@ content:
     region: content
   title:
     type: string_textfield
-    weight: 0
+    weight: 1
     region: content
     settings:
       size: 60

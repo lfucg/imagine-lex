@@ -1,0 +1,119 @@
+uuid: 0fc310d9-260f-443d-b58a-6783993b0326
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.place_type.body
+    - field.field.node.place_type.field_bulleted_list
+    - field.field.node.place_type.field_development_types
+    - field.field.node.place_type.field_featured_image
+    - field.field.node.place_type.field_file
+    - field.field.node.place_type.field_icon
+    - field.field.node.place_type.field_image
+    - field.field.node.place_type.field_recommended_zones
+    - image.style.thumbnail
+    - node.type.place_type
+  module:
+    - file
+    - image
+    - inline_entity_form
+    - path
+    - text
+id: node.place_type.default
+targetEntityType: node
+bundle: place_type
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 2
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_bulleted_list:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_development_types:
+    weight: 7
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: 'Dev Type'
+      label_plural: 'Dev Types'
+      collapsible: true
+      allow_new: true
+      allow_existing: true
+      match_operator: STARTS_WITH
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  field_featured_image:
+    weight: 5
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_file:
+    weight: 8
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_icon:
+    weight: 4
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_image:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_recommended_zones:
+    weight: 6
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  path:
+    type: path
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

@@ -1,0 +1,19 @@
+uuid: 5b60424f-809e-4ed6-b7df-690433b2fb14
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bulleted_list
+    - node.type.place_type
+id: node.place_type.field_bulleted_list
+field_name: field_bulleted_list
+entity_type: node
+bundle: place_type
+label: 'Site Priorities'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

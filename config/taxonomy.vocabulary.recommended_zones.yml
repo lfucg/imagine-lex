@@ -1,0 +1,8 @@
+uuid: 0b28bb2f-a1ac-4c2c-83c7-c0b918ecccdc
+langcode: en
+status: true
+dependencies: {  }
+name: 'Recommended Zones'
+vid: recommended_zones
+description: 'Zones for the Place Types in PlaceBuilder'
+weight: 0

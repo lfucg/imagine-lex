@@ -1,0 +1,29 @@
+uuid: 483a39c8-1c78-416f-a168-c29aefc626f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_recommended_zones
+    - node.type.place_type
+    - taxonomy.vocabulary.recommended_zones
+id: node.place_type.field_recommended_zones
+field_name: field_recommended_zones
+entity_type: node
+bundle: place_type
+label: 'Recommended Zones'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      recommended_zones: recommended_zones
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

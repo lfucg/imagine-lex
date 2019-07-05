@@ -1,0 +1,23 @@
+uuid: 2c82d854-22e9-4813-8077-e5b1c0a17c53
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_residential
+    - node.type.dev_type
+  module:
+    - options
+id: node.dev_type.field_residential
+field_name: field_residential
+entity_type: node
+bundle: dev_type
+label: Residential/Non-Residential
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: res
+default_value_callback: ''
+settings: {  }
+field_type: list_string

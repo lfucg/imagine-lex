@@ -1,0 +1,19 @@
+uuid: 42670b94-7160-47b8-a209-249b7569986c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_transit
+    - node.type.dev_type
+id: node.dev_type.field_transit
+field_name: field_transit
+entity_type: node
+bundle: dev_type
+label: 'Transit Infrastructure & Connectivity'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long
