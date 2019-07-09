@@ -1,0 +1,22 @@
+uuid: fd0d9eb4-3903-4915-a1f5-f938ec7ac7cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.staff
+  module:
+    - text
+id: node.staff.body
+field_name: body
+entity_type: node
+bundle: staff
+label: 'Staff Bio'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

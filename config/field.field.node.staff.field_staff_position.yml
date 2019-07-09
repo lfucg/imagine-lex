@@ -1,0 +1,21 @@
+uuid: 2cab793d-74b6-49c9-8a62-dc8e5b8f3d22
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_staff_position
+    - node.type.staff
+  module:
+    - text
+id: node.staff.field_staff_position
+field_name: field_staff_position
+entity_type: node
+bundle: staff
+label: 'Staff Position'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text
