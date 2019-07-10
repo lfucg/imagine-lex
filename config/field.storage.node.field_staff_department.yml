@@ -1,0 +1,20 @@
+uuid: 7e3831b5-8101-4587-8998-0c045b7680cb
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_staff_department
+field_name: field_staff_department
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
