@@ -1,0 +1,18 @@
+uuid: 3ea6fced-e5b5-4d11-a324-c87a4bc5bbc0
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'General Page'
+type: general_page
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true
