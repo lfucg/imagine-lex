@@ -1,0 +1,8 @@
+uuid: b72e50e7-b931-4cee-82db-3ef573a2f05b
+langcode: en
+status: true
+dependencies: {  }
+name: Category
+vid: category
+description: '(Imagine, Inform, or Implement)'
+weight: 0
