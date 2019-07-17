@@ -11,7 +11,7 @@ id: node.policy.body
 field_name: body
 entity_type: node
 bundle: policy
-label: 'Main Description'
+label: Definition
 description: ''
 required: false
 translatable: true

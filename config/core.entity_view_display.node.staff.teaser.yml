@@ -27,4 +27,7 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  field_staff_department: true
+  field_staff_photo: true
+  field_staff_position: true
