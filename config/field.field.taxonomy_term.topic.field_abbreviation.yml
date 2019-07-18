@@ -1,0 +1,19 @@
+uuid: 08ef6686-5702-4d74-9603-4f8636485a8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_abbreviation
+    - taxonomy.vocabulary.topic
+id: taxonomy_term.topic.field_abbreviation
+field_name: field_abbreviation
+entity_type: taxonomy_term
+bundle: topic
+label: Abbreviation
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.taxonomy_term.topic.field_abbreviation
     - field.field.taxonomy_term.topic.field_icon
     - taxonomy.vocabulary.topic
   module:
@@ -20,6 +21,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_abbreviation:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
   field_icon:
     weight: 1
     label: above
