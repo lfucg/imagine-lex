@@ -20,5 +20,10 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_abbreviation: true
   field_color: true
+  field_images: true
+  field_land_building_design: true
+  field_parking_or_qol: true
   field_residential: true
+  field_transit: true

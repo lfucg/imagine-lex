@@ -27,4 +27,8 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  field_criteria: true
+  field_file: true
+  field_policy_number: true
+  field_topics: true
