@@ -1,0 +1,25 @@
+uuid: f9b11197-c4b4-47a9-82ae-cce1d69048c8
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:85f6b4ae-7d1b-43a7-9a78-e2270231f743'
+  module:
+    - block_content
+  theme:
+    - imaginelex
+id: headernavbar
+theme: imaginelex
+region: header
+weight: -6
+provider: null
+plugin: 'block_content:85f6b4ae-7d1b-43a7-9a78-e2270231f743'
+settings:
+  id: 'block_content:85f6b4ae-7d1b-43a7-9a78-e2270231f743'
+  label: 'Header Nav Bar'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
