@@ -1,7 +1,7 @@
 name: imaginelex
 type: theme
 description: Custom Drupal 8 admin theme for Imagine Lexington
-base theme: adminimal_theme
+base theme: bootstrap_barrio
 
 package: Other
 core: 8.x
@@ -17,4 +17,5 @@ regions:
   footer: Footer
 
 libraries:
-  - 'imaginelex/global-styling'
+  - imaginelex/bootstrap_cdn
+  - imaginelex/global-styling
