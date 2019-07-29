@@ -1,0 +1,75 @@
+/* Header Navbar */
+
+.headernav {
+  width: 100%;
+  background-color: white;
+  height: 50px;
+  border: 1px solid white;
+}
+
+.header-container {
+  margin: 0 20px;
+}
+
+.header-row {
+  margin-top: 10px;
+}
+
+.header-btn {
+  font-size: 25px;
+}
+
+.header-btn > i {
+  margin-left: 50px;
+}
+
+.header-utility {
+  display: inline;
+}
+
+.header-search {
+  border: 1px solid black;
+  width: 100px;
+  float: right;
+}
+
+.search-icon {
+  margin-left: 5px;
+}
+
+.header-input {
+  border: none;
+  width: 75%;
+}
+
+.header-input:focus {
+  outline: none;
+}
+
+.header-input::placeholder {
+  color: black;
+}
+
+.header-logo {
+  display: inline-block;
+  margin: 5px 20px 0 0;
+}
+
+.header-triangle {
+  font-size: 15px;
+  margin: 5px 10px 0 0;
+  color: #434343;
+}
+
+.header-contact > button {
+  background-color: black;
+  color: white;
+  border: none;
+  height: 100%;
+  width: 125px;
+  margin-left: 10px;
+}
+
+.header-hamburger {
+  margin-left: 10px;
+}

@@ -12,7 +12,7 @@ _core:
   default_config_hash: 8zRjTNbfNAJ94lQpZDu6MkyD87GYJ2zpH9VQPVmRbcM
 id: imaginelex_footer
 theme: imaginelex
-region: main_nav
+region: footer
 weight: 0
 provider: null
 plugin: 'system_menu_block:footer'
@@ -24,4 +24,9 @@ settings:
   level: 1
   depth: 0
   expand_all_items: false
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '/admin*'
+    negate: true
+    context_mapping: {  }
