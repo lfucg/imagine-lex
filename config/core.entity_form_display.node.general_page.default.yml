@@ -6,10 +6,13 @@ dependencies:
     - field.field.node.general_page.body
     - field.field.node.general_page.field_category
     - field.field.node.general_page.field_hero_image
+    - field.field.node.general_page.field_page_section
+    - field.field.node.general_page.layout_builder__layout
     - image.style.thumbnail
     - node.type.general_page
   module:
     - image
+    - paragraphs
     - path
     - text
 id: node.general_page.default
@@ -48,6 +51,18 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+    region: content
+  field_page_section:
+    type: entity_reference_paragraphs
+    weight: 124
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
     region: content
   path:
     type: path
