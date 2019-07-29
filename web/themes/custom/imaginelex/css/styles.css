@@ -136,3 +136,45 @@ input:-moz-placeholder, textarea:-moz-placeholder {
   width: 125px;
   margin-left: 10px;
 }
+
+.header-hamburger {
+  margin-left: 10px;
+}
+
+/* Takeover Navigation */
+
+.takeover-nav {
+  position: absolute;
+  height: 100%;
+  z-index: 100;
+  background-color: #0c5796;
+  opacity: 0.75;
+  width: 100%;
+  display: none;
+}
+
+.takeover-logo {
+  width: 400px;
+  margin-left: 30%;
+  display: inline-block;
+}
+
+.takeover-close {
+  display: inline;
+}
+
+.close-btn {
+  color: white;
+  font-size: 40px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.close-btn, .header-hamburger {
+  background-color: transparent;
+  border: none;
+}
+
+.close-btn:focus, .header-hamburger:focus {
+  outline: none;
+}

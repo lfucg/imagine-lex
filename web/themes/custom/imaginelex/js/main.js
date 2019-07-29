@@ -8,6 +8,10 @@ function searchCollapse() {
     document.getElementById('header-input').style.width="75%";
 }
 
-function takeOverToggle() {
+function takeoverOpen() {
+    document.getElementById('takeover-nav').style.display="block";
+}
 
+function takeoverClose() {
+    document.getElementById('takeover-nav').style.display="none";
 }
