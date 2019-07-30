@@ -19,3 +19,8 @@ regions:
 libraries:
   - imaginelex/bootstrap_cdn
   - imaginelex/global-styling
+
+component-libraries:
+  components:
+    paths:
+      - _patterns

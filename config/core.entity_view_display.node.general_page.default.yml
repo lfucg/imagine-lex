@@ -7,66 +7,16 @@ dependencies:
     - field.field.node.general_page.field_category
     - field.field.node.general_page.field_hero_image
     - field.field.node.general_page.field_page_section
-    - field.field.node.general_page.layout_builder__layout
     - node.type.general_page
   module:
     - entity_reference_revisions
     - layout_builder
-    - layout_discovery
     - text
     - user
 third_party_settings:
   layout_builder:
-    allow_custom: true
-    enabled: true
-    sections:
-      -
-        layout_id: layout_onecol
-        layout_settings: {  }
-        components:
-          1f42273f-6969-4d65-ac34-beef4783496d:
-            uuid: 1f42273f-6969-4d65-ac34-beef4783496d
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'extra_field_block:node:general_page:links'
-            additional: {  }
-            weight: 0
-          de99070b-67f3-4489-b5ad-dfa3d6b0fae3:
-            uuid: de99070b-67f3-4489-b5ad-dfa3d6b0fae3
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:general_page:body'
-              formatter:
-                label: hidden
-                type: text_default
-                settings: {  }
-                third_party_settings: {  }
-            additional: {  }
-            weight: 1
-          09be101b-ddd9-4b5b-8b65-d6fbb0255853:
-            uuid: 09be101b-ddd9-4b5b-8b65-d6fbb0255853
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:general_page:field_page_section'
-              formatter:
-                type: entity_reference_revisions_entity_view
-                label: above
-                settings:
-                  view_mode: default
-                  link: ''
-                third_party_settings: {  }
-            additional: {  }
-            weight: 2
-        third_party_settings: {  }
+    allow_custom: false
+    enabled: false
 id: node.general_page.default
 targetEntityType: node
 bundle: general_page
@@ -75,24 +25,24 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 101
+    weight: 0
     settings: {  }
     third_party_settings: {  }
     region: content
   field_page_section:
     type: entity_reference_revisions_entity_view
-    weight: 102
-    label: above
+    weight: 1
+    label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
     region: content
   links:
-    weight: 100
+    weight: 2
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   field_category: true
   field_hero_image: true
