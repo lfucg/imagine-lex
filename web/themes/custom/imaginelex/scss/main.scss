@@ -1,3 +1,8 @@
+@import './design_variables';
+@import './slab';
+@import './views';
+@import './atoms/heading';
+@import './atoms/hero';
 @import './components/footer';
 @import './components/header';
 @import './components/takeover_nav';
@@ -6,3 +11,6 @@ div#block-imaginelex-branding {
   max-width: 300px;
 }
 
+.red-font {
+  color: red;
+}

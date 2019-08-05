@@ -1,0 +1,21 @@
+@function color($name: wildcat-blue, $scheme: $colors) {
+  @if map-has-key($scheme, $name) {
+    @return map-get($scheme, $name);
+  }
+  @return $color-undefined;
+}
+
+
+$colors: (
+  il-green: #75b646,
+  il-blue: #0c5796,
+  grey: #515151,
+  neighborhoods: #f36e2b,
+  environment: #004b4c,
+  jobs: #9079b4,
+  community: #c75657,
+  balance: #8e4a27,
+  implementation: #488ccb,
+  dark-gray: #515664,
+);
+

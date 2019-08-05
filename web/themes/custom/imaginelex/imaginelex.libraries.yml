@@ -2,9 +2,9 @@ global-styling:
   version: VERSION
   js:
     js/global.js: {}
+    js/main.js: {}
   css:
     component:
-      css/colors.css: {}
       css/main.css: {}
 bootstrap_cdn:
   js:

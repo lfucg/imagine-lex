@@ -29,7 +29,6 @@
 
 .header-search {
   border: 1px solid black;
-  width: 100px;
   float: right;
 }
 
@@ -65,11 +64,13 @@
   background-color: black;
   color: white;
   border: none;
-  height: 100%;
   width: 125px;
   margin-left: 10px;
 }
 
 .header-hamburger {
+  background: transparent;
+  border: none;
+  cursor: pointer;
   margin-left: 10px;
 }

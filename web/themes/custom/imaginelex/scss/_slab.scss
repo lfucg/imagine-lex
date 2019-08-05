@@ -1,0 +1,14 @@
+.slab {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+@each $name, $color in $colors {
+  .slab--#{$name} {
+    background-color: $color;
+  }
+}
+
+.slab--dark-gray {
+  color: white;
+}

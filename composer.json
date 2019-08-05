@@ -27,6 +27,7 @@
         "drupal/entity_browser": "^2.2",
         "drupal/inline_entity_form": "1.x-dev",
         "drupal/paragraphs": "^1.8",
+        "drupal/twig_tweak": "^2.4",
         "drupal/viewsreference": "^1.4",
         "drush-ops/behat-drush-endpoint": "^9.3",
         "drush/drush": "^9",
@@ -94,6 +95,11 @@
                 ".htaccess",
                 "web.config"
             ]
+        },
+        "patches": {
+            "drupal/bootstrap_barrio" : {
+                "fix layout builder": "https://www.drupal.org/files/issues/2018-06-01/2976934-3.patch"
+            }
         }
     },
     "config": {
