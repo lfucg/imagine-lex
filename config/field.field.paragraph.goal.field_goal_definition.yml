@@ -1,0 +1,21 @@
+uuid: b66bb1e2-bb94-475e-81cc-8717dec7b9bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_goal_definition
+    - paragraphs.paragraphs_type.goal
+  module:
+    - text
+id: paragraph.goal.field_goal_definition
+field_name: field_goal_definition
+entity_type: paragraph
+bundle: goal
+label: 'Goal Definition'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

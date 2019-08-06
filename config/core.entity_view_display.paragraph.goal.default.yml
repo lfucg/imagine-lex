@@ -1,0 +1,40 @@
+uuid: 9bb0d39f-cfdd-4a96-8f22-3534ad9ff060
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.goal.field_goal_definition
+    - field.field.paragraph.goal.field_goal_number
+    - field.field.paragraph.goal.field_goal_objective
+    - paragraphs.paragraphs_type.goal
+  module:
+    - text
+id: paragraph.goal.default
+targetEntityType: paragraph
+bundle: goal
+mode: default
+content:
+  field_goal_definition:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_goal_number:
+    weight: 0
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_goal_objective:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

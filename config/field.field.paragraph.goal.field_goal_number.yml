@@ -1,0 +1,23 @@
+uuid: 629efd67-c107-4d4a-ac12-6ee10a92cc69
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_goal_number
+    - paragraphs.paragraphs_type.goal
+id: paragraph.goal.field_goal_number
+field_name: field_goal_number
+entity_type: paragraph
+bundle: goal
+label: 'Goal Number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

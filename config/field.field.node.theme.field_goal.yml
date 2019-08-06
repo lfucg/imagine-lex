@@ -1,0 +1,37 @@
+uuid: 65e4a10c-1b7f-46c2-b686-63cb63e17f43
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_goal
+    - node.type.theme
+    - paragraphs.paragraphs_type.goal
+  module:
+    - entity_reference_revisions
+id: node.theme.field_goal
+field_name: field_goal
+entity_type: node
+bundle: theme
+label: Goal
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      goal: goal
+    target_bundles_drag_drop:
+      goal:
+        enabled: true
+        weight: 4
+      policy_criteria:
+        weight: 5
+        enabled: false
+      views_block:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

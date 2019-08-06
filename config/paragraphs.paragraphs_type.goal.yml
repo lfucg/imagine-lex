@@ -1,0 +1,9 @@
+uuid: 4fe24f18-79ac-42ba-8b25-6a600a84d57d
+langcode: en
+status: true
+dependencies: {  }
+id: goal
+label: Goal
+icon_uuid: null
+description: 'Paragraph type for Goals to be associated with a theme.'
+behavior_plugins: {  }
