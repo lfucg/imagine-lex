@@ -1,0 +1,64 @@
+uuid: 1e384293-9700-4dbe-9fd8-99b0c23821f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.criteria.body
+    - field.field.node.criteria.field_criteria_category
+    - field.field.node.criteria.field_development_types
+    - field.field.node.criteria.field_place_types
+    - field.field.node.criteria.field_policies
+    - node.type.criteria
+  module:
+    - text
+    - user
+id: node.criteria.default
+targetEntityType: node
+bundle: criteria
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_criteria_category:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_development_types:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_place_types:
+    weight: 105
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_policies:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

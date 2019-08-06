@@ -1,0 +1,140 @@
+uuid: 54a52caa-9e62-40cc-ae77-3fe593ff181a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.criteria.body
+    - field.field.node.criteria.field_criteria_category
+    - field.field.node.criteria.field_development_types
+    - field.field.node.criteria.field_place_types
+    - field.field.node.criteria.field_policies
+    - node.type.criteria
+  module:
+    - inline_entity_form
+    - path
+    - text
+id: node.criteria.default
+targetEntityType: node
+bundle: criteria
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 121
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_criteria_category:
+    weight: 122
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      collapsible: true
+      collapsed: true
+      override_labels: false
+    third_party_settings: {  }
+    type: inline_entity_form_simple
+    region: content
+  field_development_types:
+    weight: 124
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      collapsible: true
+      collapsed: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+      allow_new: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  field_place_types:
+    weight: 125
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      collapsible: true
+      collapsed: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+      allow_new: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  field_policies:
+    weight: 123
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      collapsible: true
+      collapsed: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+      allow_new: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden: {  }

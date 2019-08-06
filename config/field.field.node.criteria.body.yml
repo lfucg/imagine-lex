@@ -1,0 +1,22 @@
+uuid: ace8dde1-114d-41d2-a377-eef327f68cba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.criteria
+  module:
+    - text
+id: node.criteria.body
+field_name: body
+entity_type: node
+bundle: criteria
+label: Definition
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

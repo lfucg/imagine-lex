@@ -1,13 +1,12 @@
-uuid: 8f48560e-486c-49b7-8502-e234c7da3643
+uuid: a85ad93c-a06c-4d46-9369-70165f2eca2d
 langcode: en
 status: true
 dependencies:
   module:
     - node
-    - paragraphs
-id: paragraph.field_dev_type
-field_name: field_dev_type
-entity_type: paragraph
+id: node.field_place_types
+field_name: field_place_types
+entity_type: node
 type: entity_reference
 settings:
   target_type: node

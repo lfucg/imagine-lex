@@ -1,17 +1,17 @@
-uuid: befd3ead-ed3c-469d-8c2f-a852f1d323c3
+uuid: 246b8287-4036-441d-b3eb-702e74bd13c6
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.general_page.body
-    - node.type.general_page
+    - field.field.node.criteria.body
+    - node.type.criteria
   module:
     - text
     - user
-id: node.general_page.teaser
+id: node.criteria.teaser
 targetEntityType: node
-bundle: general_page
+bundle: criteria
 mode: teaser
 content:
   body:
@@ -27,8 +27,4 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden:
-  field_category: true
-  field_hero_image: true
-  field_page_section: true
-  layout_builder__layout: true
+hidden: {  }

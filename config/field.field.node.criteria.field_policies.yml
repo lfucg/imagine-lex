@@ -1,0 +1,28 @@
+uuid: 56d1a22c-3192-483e-bb1b-972e86a9c6aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_policies
+    - node.type.criteria
+    - node.type.policy
+id: node.criteria.field_policies
+field_name: field_policies
+entity_type: node
+bundle: criteria
+label: Policies
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      policy: policy
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

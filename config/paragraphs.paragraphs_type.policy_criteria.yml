@@ -1,9 +1,0 @@
-uuid: 82773e05-5941-4074-97fe-758232a021b6
-langcode: en
-status: true
-dependencies: {  }
-id: policy_criteria
-label: 'Policy Criteria'
-icon_uuid: null
-description: ''
-behavior_plugins: {  }

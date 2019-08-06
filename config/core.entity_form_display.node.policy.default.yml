@@ -4,14 +4,12 @@ status: true
 dependencies:
   config:
     - field.field.node.policy.body
-    - field.field.node.policy.field_criteria
     - field.field.node.policy.field_file
     - field.field.node.policy.field_policy_number
     - field.field.node.policy.field_topics
     - node.type.policy
   module:
     - file
-    - paragraphs
     - text
 id: node.policy.default
 targetEntityType: node
@@ -25,18 +23,6 @@ content:
       rows: 9
       summary_rows: 3
       placeholder: ''
-    third_party_settings: {  }
-    region: content
-  field_criteria:
-    type: entity_reference_paragraphs
-    weight: 5
-    settings:
-      title: Criteria
-      title_plural: Criteria
-      edit_mode: open
-      add_mode: button
-      form_display_mode: default
-      default_paragraph_type: policy_criteria
     third_party_settings: {  }
     region: content
   field_file:

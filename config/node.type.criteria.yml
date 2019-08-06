@@ -1,0 +1,17 @@
+uuid: 55d85e4b-ab95-46f2-8bd0-d794ba7b176c
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Criteria
+type: criteria
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false
