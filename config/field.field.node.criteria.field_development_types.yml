@@ -1,0 +1,28 @@
+uuid: 3e347125-c118-4f89-8c2c-c42b286de15a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_development_types
+    - node.type.criteria
+    - node.type.dev_type
+id: node.criteria.field_development_types
+field_name: field_development_types
+entity_type: node
+bundle: criteria
+label: 'Development Types'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      dev_type: dev_type
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

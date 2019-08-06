@@ -1,14 +1,16 @@
-uuid: 8753586a-7fc5-4b32-b0f7-1f7ec689161b
+uuid: 1f4eee8a-1091-41bf-a5fc-98c95afc832a
 langcode: en
 status: true
 dependencies:
   module:
-    - paragraphs
-id: paragraph.field_description
-field_name: field_description
-entity_type: paragraph
-type: string_long
+    - node
+id: node.field_dev_type_abbreviation
+field_name: field_dev_type_abbreviation
+entity_type: node
+type: string
 settings:
+  max_length: 10
+  is_ascii: false
   case_sensitive: false
 module: core
 locked: false

@@ -356,7 +356,7 @@ class ContentImport extends ConfigFormBase {
                 }
                 $logVariationFields .= " Success \n";
                 break;
-                            
+
               case 'text_long':
               case 'text':
                 $logVariationFields .= "Importing Content (" . $fieldNames[$f] . ") :: ";
@@ -444,6 +444,13 @@ class ContentImport extends ConfigFormBase {
 
               case 'entity_reference_revisions':
                 /* In Progress */
+                break;
+
+              case 'list_string':
+                $logVariationFields .= "Importing Content (" . $fieldNames[$f] . ") :: ";
+                $listArray = explode(", ", $data[$keyIndex[$fieldNames[$f]]]);
+                $nodeArray[$fieldNames[$f]] = $listArray;
+                $logVariationFields .= " Success \n";
                 break;
 
               default:

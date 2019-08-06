@@ -4,13 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.node.policy.body
-    - field.field.node.policy.field_criteria
     - field.field.node.policy.field_file
     - field.field.node.policy.field_policy_number
     - field.field.node.policy.field_topics
     - node.type.policy
   module:
-    - entity_reference_revisions
     - file
     - text
     - user
@@ -24,15 +22,6 @@ content:
     type: text_default
     weight: 101
     settings: {  }
-    third_party_settings: {  }
-    region: content
-  field_criteria:
-    type: entity_reference_revisions_entity_view
-    weight: 105
-    label: above
-    settings:
-      view_mode: default
-      link: ''
     third_party_settings: {  }
     region: content
   field_file:

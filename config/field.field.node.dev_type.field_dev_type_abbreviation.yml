@@ -1,0 +1,19 @@
+uuid: c732386d-c78a-4f8d-ada2-432f04404a80
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dev_type_abbreviation
+    - node.type.dev_type
+id: node.dev_type.field_dev_type_abbreviation
+field_name: field_dev_type_abbreviation
+entity_type: node
+bundle: dev_type
+label: 'Dev Type Abbreviation'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

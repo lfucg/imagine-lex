@@ -1,0 +1,8 @@
+uuid: 01769b0c-1ea8-4907-b45d-c61b13d903dc
+langcode: en
+status: true
+dependencies: {  }
+name: 'Criteria Category'
+vid: criteria_category
+description: 'Categories for Policy Criteria (Placebuilder)'
+weight: 0

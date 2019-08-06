@@ -3,8 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.dev_type.field_abbreviation
     - field.field.node.dev_type.field_color
+    - field.field.node.dev_type.field_dev_type_abbreviation
     - field.field.node.dev_type.field_images
     - field.field.node.dev_type.field_land_building_design
     - field.field.node.dev_type.field_parking_or_qol
@@ -21,14 +21,6 @@ targetEntityType: node
 bundle: dev_type
 mode: default
 content:
-  field_abbreviation:
-    weight: 2
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_color:
     weight: 1
     settings:
@@ -36,6 +28,14 @@ content:
       placeholder_opacity: ''
     third_party_settings: {  }
     type: color_field_widget_default
+    region: content
+  field_dev_type_abbreviation:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   field_images:
     weight: 7

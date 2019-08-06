@@ -1,0 +1,8 @@
+uuid: 5cb3327a-83b5-4ab7-bd56-2e3295672dab
+langcode: en
+status: true
+dependencies: {  }
+name: critera_category
+vid: critera_category
+description: null
+weight: 0
