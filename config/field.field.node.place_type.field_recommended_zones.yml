@@ -10,7 +10,7 @@ id: node.place_type.field_recommended_zones
 field_name: field_recommended_zones
 entity_type: node
 bundle: place_type
-label: 'Recommended Zones'
+label: 'Recommended Zone(s)'
 description: ''
 required: false
 translatable: false

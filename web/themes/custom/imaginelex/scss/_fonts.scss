@@ -1,0 +1,59 @@
+//sass-lint:disable no-url-domains, no-url-protocols, no-duplicate-properties
+@font-face {
+  font-family: 'AvenirLTStd-Black';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../assets/fonts/AvenirLTStd-Black.otf');
+}
+
+@font-face {
+  font-family: 'AvenirLTStd-Book';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/AvenirLTStd-Book.otf');
+}
+
+@font-face {
+  font-family: 'AvenirLTStd-Heavy';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../assets/fonts/AvenirLTStd-Heavy.otf');
+}
+
+@font-face {
+  font-family: '20Century-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/TCM_____.TTF');
+}
+@font-face {
+  font-family: '20Century-Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/TCB_____.TTF');
+}
+
+
+body {
+  font-family: $font-avenir;
+}
+
+.font-avenir__black {
+  font-family: $font-avenir__black;
+}
+.font-avenir {
+  font-family: $font-avenir;
+}
+.font-avenir__heavy {
+  font-family: $font-avenir__heavy;
+}
+.font-20cen {
+  font-family: $font-20cen;
+}
+.font-20cen__bold {
+  font-family: $font-20cen__bold;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}

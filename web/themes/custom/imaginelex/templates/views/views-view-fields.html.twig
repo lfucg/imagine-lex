@@ -1,0 +1,78 @@
+{#
+/**
+ * @file
+ * Default view template to display all the fields in a row.
+ *
+ * Available variables:
+ * - view: The view in use.
+ * - fields: A list of fields, each one contains:
+ *   - content: The output of the field.
+ *   - raw: The raw data for the field, if it exists. This is NOT output safe.
+ *   - class: The safe class ID to use.
+ *   - handler: The Views field handler controlling this field.
+ *   - inline: Whether or not the field should be inline.
+ *   - wrapper_element: An HTML element for a wrapper.
+ *   - wrapper_attributes: List of attributes for wrapper element.
+ *   - separator: An optional separator that may appear before a field.
+ *   - label: The field's label text.
+ *   - label_element: An HTML element for a label wrapper.
+ *   - label_attributes: List of attributes for label wrapper.
+ *   - label_suffix: Colon after the label.
+ *   - element_type: An HTML element for the field content.
+ *   - element_attributes: List of attributes for HTML element for field content.
+ *   - has_label_colon: A boolean indicating whether to display a colon after
+ *     the label.
+ *   - element_type: An HTML element for the field content.
+ *   - element_attributes: List of attributes for HTML element for field content.
+ * - row: The raw result from the query, with all data it fetched.
+ *
+ * @see template_preprocess_views_view_fields()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{# helps with making the accordion headers all over the site that are colored #}
+{% set colors = {
+  '#AA8ABA': 'devtype--lr',
+  '#8658A7': 'devtype--mr',
+  '#6C3C98': 'devtype--mhr',
+  '#3C2B81': 'devtype--hr',
+  '#8D9AB1': 'devtype--lnr-mu',
+  '#596979': 'devtype--mnr-mu',
+  '#183051': 'devtype--hnr-mu',
+  '#1CA281': 'devtype--inr',
+  '#75b646' : 'il-green',
+  '#0c5796' : 'il-blue',
+  '#515151' : 'grey',
+  '#f36e2b' : 'neighborhoods',
+  '#004b4c' : 'environment',
+  '#9079b4' : 'jobs',
+  '#c75657' : 'community',
+  '#8e4a27' : 'balance',
+  '#488ccb' : 'implementation',
+  '#515664' : 'dark-gray',
+} %}
+
+
+{% for field in fields -%}
+  {{ field.separator }}
+  {%- if field.wrapper_element -%}
+    <{{ field.wrapper_element }}{{ field.wrapper_attributes.addClass(field.handler.field == 'title' ? 'slab--' ~ colors[accordion_header_color]) }}>
+  {%- endif %}
+  {%- if field.label -%}
+    {%- if field.label_element -%}
+      <{{ field.label_element }}{{ field.label_attributes }}>{{ field.label }}{{ field.label_suffix }}</{{ field.label_element }}>
+    {%- else -%}
+      {{ field.label }}{{ field.label_suffix }}
+    {%- endif %}
+  {%- endif %}
+  {%- if field.element_type -%}
+    <{{ field.element_type }}{{ field.element_attributes }}>{{ field.content }}</{{ field.element_type }}>
+  {%- else -%}
+    {{ field.content }}
+  {%- endif %}
+  {%- if field.wrapper_element -%}
+    </{{ field.wrapper_element }}>
+  {%- endif %}
+{%- endfor %}

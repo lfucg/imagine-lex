@@ -1,6 +1,10 @@
 .slab {
   padding-right: 0 !important;
   padding-left: 0 !important;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 @each $name, $color in $colors {
@@ -11,4 +15,8 @@
 
 .slab--dark-gray {
   color: white;
+}
+
+.slab--flex-col {
+  flex-direction: column !important;
 }
