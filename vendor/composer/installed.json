@@ -2917,6 +2917,90 @@
         "description": "Drupal is an open source content management platform powering millions of websites and applications."
     },
     {
+        "name": "drupal/draggableviews",
+        "version": "1.2.0",
+        "version_normalized": "1.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/draggableviews.git",
+            "reference": "8.x-1.2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/draggableviews-8.x-1.2.zip",
+            "reference": "8.x-1.2",
+            "shasum": "0f5e9195ceec209552aa50f8ce3c230692c284db"
+        },
+        "require": {
+            "drupal/core": "*"
+        },
+        "require-dev": {
+            "drupal/draggableviews_demo": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.2",
+                "datestamp": "1541518680",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Tyler Struyk (iStryker)",
+                "homepage": "https://www.drupal.org/u/istryker",
+                "email": "tyler.struyk@gmail.com",
+                "role": "Maintainer"
+            },
+            {
+                "name": "Andrii Podanenko (podarok)",
+                "homepage": "https://www.drupal.org/u/podarok",
+                "email": "podarokua@gmail.com",
+                "role": "Drupal 7 to 8 Porter"
+            },
+            {
+                "name": "Yuriy Gerasimov (ygerasimov)",
+                "homepage": "https://www.drupal.org/u/ygerasimov",
+                "email": "yuriy.gerasimov@gmail.com",
+                "role": "Ex Maintainer (D7)"
+            },
+            {
+                "name": "Severin Unger (sevi)",
+                "homepage": "https://www.drupal.org/u/sevi",
+                "role": "Ex Maintainer (D6)"
+            },
+            {
+                "name": "podarok",
+                "homepage": "https://www.drupal.org/user/116002"
+            },
+            {
+                "name": "sevi",
+                "homepage": "https://www.drupal.org/user/199290"
+            },
+            {
+                "name": "ygerasimov",
+                "homepage": "https://www.drupal.org/user/257311"
+            }
+        ],
+        "description": "DraggableViews module makes views draggable.",
+        "homepage": "https://www.drupal.org/project/draggableviews",
+        "support": {
+            "source": "https://cgit.drupalcode.org/draggableviews",
+            "issues": "https://www.drupal.org/project/issues/draggableviews"
+        }
+    },
+    {
         "name": "drupal/drupal-driver",
         "version": "v1.4.0",
         "version_normalized": "1.4.0.0",
@@ -3399,6 +3483,56 @@
         "support": {
             "source": "https://git.drupalcode.org/project/twig_tweak",
             "issues": "https://www.drupal.org/project/issues/twig_tweak"
+        }
+    },
+    {
+        "name": "drupal/views_accordion",
+        "version": "1.2.0",
+        "version_normalized": "1.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/views_accordion.git",
+            "reference": "8.x-1.2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/views_accordion-8.x-1.2.zip",
+            "reference": "8.x-1.2",
+            "shasum": "4822df2084bd3e05fc9b1ff7b2f99768c123341c"
+        },
+        "require": {
+            "drupal/core": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.2",
+                "datestamp": "1544298180",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Manuel Garcia",
+                "homepage": "https://www.drupal.org/user/213194"
+            }
+        ],
+        "description": "Provides an accordion views display plugin.",
+        "homepage": "https://www.drupal.org/project/views_accordion",
+        "support": {
+            "source": "https://git.drupalcode.org/project/views_accordion",
+            "issues": "https://www.drupal.org/project/issues/views_accordion"
         }
     },
     {

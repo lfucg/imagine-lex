@@ -18,6 +18,7 @@ module:
   contextual: 0
   datetime: 0
   dblog: 0
+  draggableviews: 0
   dynamic_page_cache: 0
   editor: 0
   entity_browser: 0
@@ -52,6 +53,7 @@ module:
   twig_tweak: 0
   update: 0
   user: 0
+  views_accordion: 0
   views_ui: 0
   viewsreference: 0
   menu_link_content: 1

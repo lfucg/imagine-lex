@@ -5,25 +5,38 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.dev_type.field_color
+    - field.field.node.dev_type.field_dev_type_abbreviation
+    - field.field.node.dev_type.field_images
+    - field.field.node.dev_type.field_land_building_design
+    - field.field.node.dev_type.field_parking_or_qol
     - field.field.node.dev_type.field_residential
+    - field.field.node.dev_type.field_transit
     - node.type.dev_type
   module:
+    - color_field
     - user
 id: node.dev_type.teaser
 targetEntityType: node
 bundle: dev_type
 mode: teaser
 content:
-  links:
-    weight: 100
-    settings: {  }
-    third_party_settings: {  }
+  field_color:
+    type: color_field_formatter_swatch
+    weight: 0
     region: content
+    label: hidden
+    settings:
+      shape: square
+      width: '100'
+      height: '100'
+      opacity: '1'
+    third_party_settings: {  }
 hidden:
   field_abbreviation: true
-  field_color: true
+  field_dev_type_abbreviation: true
   field_images: true
   field_land_building_design: true
   field_parking_or_qol: true
   field_residential: true
   field_transit: true
+  links: true

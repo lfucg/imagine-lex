@@ -1,0 +1,17 @@
+.view-placebuilder.view-display-id-block_2 {
+  .ui-accordion {
+    border-radius: 0;
+  }
+  .ui-state-active, .ui-state-default {
+    &:active, &:focus {
+      outline: none;
+    }
+    a{
+      color:white;
+    }
+  }
+
+  .ui-state-active {
+    border-color: #c5c5c5;
+  }
+}

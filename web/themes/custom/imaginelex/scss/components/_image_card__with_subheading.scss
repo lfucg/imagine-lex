@@ -1,0 +1,14 @@
+.image-with-subheading {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  .image-wrapper--card {
+    height: 75%;
+    img {
+      max-height: 100%;
+    }
+  }
+  .subheading-link {
+    height: 25%;
+  }
+}
