@@ -1,0 +1,22 @@
+.field_recommended_zones__item {
+  border: 3px solid black;
+  border-radius: 50%;
+  font-size: 30px;
+  height: 100px;
+  margin: 15px;
+  line-height: 100px;
+  text-align: center;
+  width: 100px;
+
+  a {
+    color: black;
+
+    &:hover {
+      color: color(dark-gray);
+    }
+  }
+}
+
+.field_development_types__item {
+  max-width: 25%;
+}

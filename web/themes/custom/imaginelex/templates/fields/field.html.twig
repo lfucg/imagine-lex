@@ -73,14 +73,16 @@
         heading_variant: 'views--header font-20cen uppercase'
       }
     %}
-    {% if multiple %}
-      <div class='field__items slab'>
-    {% endif %}
-    {% for item in items %}
-      <div{{ item.attributes.addClass('field__item') }}>{{ item.content }}</div>
-    {% endfor %}
-    {% if multiple %}
-      </div>
-    {% endif %}
+    {% block items %}
+      {% if multiple %}
+        <div class='field__items slab'>
+      {% endif %}
+      {% for item in items %}
+        <div{{ item.attributes.addClass('field__item ' ~ field_name ~ '__item' ) }}>{{ item.content }}</div>
+      {% endfor %}
+      {% if multiple %}
+        </div>
+      {% endif %}
+    {% endblock %}
   </div>
 {% endif %}

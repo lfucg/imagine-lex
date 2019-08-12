@@ -15,8 +15,31 @@
  * @see template_preprocess_views_accordion_view()
  */
 #}
+
+{# helps with making the accordion headers all over the site that are colored #}
+{% set colors = {
+  '#AA8ABA': 'devtype--lr',
+  '#8658A7': 'devtype--mr',
+  '#6C3C98': 'devtype--mhr',
+  '#3C2B81': 'devtype--hr',
+  '#8D9AB1': 'devtype--lnr-mu',
+  '#596979': 'devtype--mnr-mu',
+  '#183051': 'devtype--hnr-mu',
+  '#1CA281': 'devtype--inr',
+  '#75b646' : 'il-green',
+  '#0c5796' : 'il-blue',
+  '#515151' : 'grey',
+  '#f36e2b' : 'neighborhoods',
+  '#004b4c' : 'environment',
+  '#9079b4' : 'jobs',
+  '#c75657' : 'community',
+  '#8e4a27' : 'balance',
+  '#488ccb' : 'implementation',
+  '#515664' : 'dark-gray',
+} %}
+
 {% if title %}
-  <h3 class="js-views-accodion-group-header">{{ title }}</h3>
+  <h3 class="js-views-accodion-group-header {{ accordion_group_color ? 'slab--' ~ colors[accordion_group_color] }}">{{ title }}</h3>
 {% endif %}
 {% for row in rows %}
   {%

@@ -27,4 +27,8 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  field_criteria_category: true
+  field_development_types: true
+  field_place_types: true
+  field_policies: true

@@ -1,13 +1,11 @@
-.view-placebuilder.view-display-id-block_2 {
+.view-placebuilder.view-display-id-block_2, .view-placebuilder.view-display-id-block_3 {
   .ui-accordion {
     border-radius: 0;
   }
   .ui-state-active, .ui-state-default {
+    color:white;
     &:active, &:focus {
       outline: none;
-    }
-    a{
-      color:white;
     }
   }
 
