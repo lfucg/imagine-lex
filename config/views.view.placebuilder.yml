@@ -957,8 +957,8 @@ display:
               rendered: true
               rendered_strip: false
               use-grouping-header: 0
-          row_class: col
-          default_row_class: true
+          row_class: 'col-md col-12'
+          default_row_class: false
           disableifone: 0
           row-start-open: '0'
           collapsible: 0
@@ -966,7 +966,7 @@ display:
           animation_time: '300'
           heightStyle: content
           event: click
-          use_header_icons: 0
+          use_header_icons: 1
           icon_header: ui-icon-triangle-1-e
           icon_active_header: ui-icon-triangle-1-s
       row:
@@ -1058,6 +1058,7 @@ display:
         row: false
         title: false
         relationships: false
+        css_class: false
       filter_groups:
         operator: AND
         groups:
@@ -1169,7 +1170,7 @@ display:
           element_label_class: ''
           element_label_colon: false
           element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_class: 'col-md-2 col-sm-12 d-inline-block align-self-start'
           element_default_classes: true
           empty: ''
           hide_empty: false
@@ -1234,7 +1235,7 @@ display:
           element_label_class: ''
           element_label_colon: false
           element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_class: w-100
           element_default_classes: true
           empty: ''
           hide_empty: false
@@ -1297,7 +1298,7 @@ display:
           element_label_class: ''
           element_label_colon: false
           element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_class: 'col-md-10 col-sm-12 d-inline-block'
           element_default_classes: true
           empty: ''
           hide_empty: false
@@ -1409,21 +1410,27 @@ display:
               rendered: true
               rendered_strip: false
               use-grouping-header: 1
-          row_class: col-12
-          default_row_class: true
+          row_class: 'slab pb-2 w-100'
+          default_row_class: false
           disableifone: 0
           row-start-open: none
           collapsible: 1
-          animated: none
+          animated: linear
           animation_time: '300'
-          heightStyle: auto
+          heightStyle: content
           event: click
-          use_header_icons: 0
+          use_header_icons: 1
           icon_header: ui-icon-triangle-1-e
           icon_active_header: ui-icon-triangle-1-s
       row:
         type: fields
-        options: {  }
+        options:
+          default_field_elements: true
+          inline:
+            title: title
+            body: body
+          separator: ''
+          hide_empty: false
       block_description: 'Criteria Table by Category (with context filters)'
       title: 'Criteria by Category'
       relationships:
@@ -1436,6 +1443,7 @@ display:
           admin_label: 'field_development_types: Content'
           required: false
           plugin_id: standard
+      css_class: 'col-auto col-md-10 offset-md-1 col-lg-8 offset-lg-2 '
     cache_metadata:
       max-age: -1
       contexts:
