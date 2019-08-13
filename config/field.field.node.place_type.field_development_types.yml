@@ -10,7 +10,7 @@ id: node.place_type.field_development_types
 field_name: field_development_types
 entity_type: node
 bundle: place_type
-label: 'Development Types'
+label: 'Most Suitable Development Types'
 description: ''
 required: false
 translatable: false

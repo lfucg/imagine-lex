@@ -17,6 +17,13 @@
             <a id="main-content" tabindex="-1"></a>
             {{ page.content }}
             {% for dt in node.field_development_types %}
+              {% include '@components/atoms/section-heading.twig'
+                with {
+                  level: 2,
+                  headline: dt.entity.title.value ~ ' Development Criteria',
+                  heading_variant: 'views--header uppercase'
+                }
+              %}
               {{ drupal_view('placebuilder', 'block_3', node.nid.value, dt.target_id )}}
             {% endfor %}
           </section>
