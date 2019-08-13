@@ -1,8 +1,13 @@
 <div class="image-with-subheading text-center">
     <div class="image-wrapper--card">
-      <a href="{{url}}">
+    {% if url|length > 0 %}
+      <a href="{{ url }}">
         <img src="{{ img }}" class="img-fluid" alt="{{ label }}" title="{{ label }}">
       </a>
+      {% include '@components/atoms/subheading-link.twig' with { url: url, label: label } %}
+    {% else %}
+      <img src="{{ img }}" class="img-fluid" alt="{{ label }}" title="{{ label }}">
+      {% include '@components/atoms/subheading.twig' with { label: label } %}
+    {% endif %}
     </div>
-    {% include '@components/atoms/subheading-link.twig' with { url: url, label: label } %}
 </div>
