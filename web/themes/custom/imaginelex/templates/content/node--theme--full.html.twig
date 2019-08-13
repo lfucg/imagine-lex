@@ -83,7 +83,45 @@
     {{ title_suffix }}
   </header>
   <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
-    {{ content|without('field_color', 'field_pillars') }}
+    {{ content|without('field_color', 'field_pillars', 'field_icon') }}
   </div>
-  {{ drupal_view('pillars_accordions', 'block_1', node.id()) }}
+
+{% include '@components/atoms/section-heading.twig'
+  with {
+    level: 2,
+    headline: "Vision for " ~ node.title.value,
+    heading_variant: 'views--header uppercase'
+  }
+%}
+<ul class="nav" id="pillarTabs" role="tablist">
+  {% for pillar in node.field_pillars %}
+    <li class="nav-item nav-pills nav-fill col">
+      <a
+        class="nav-link"
+        id="{{- pillar.entity.title.value|lower ~ "-tab" }}"
+        data-toggle="tab"
+        href="#{{- pillar.entity.title.value|lower -}}"
+        role="tab"
+        aria-controls="{{- pillar.entity.title.value|lower -}}"
+        aria-selected="{{ loop.index0 == 0 ? "true" : "false" }}"
+      >
+          {% include '@components/molecules/image-card--with-sub.twig'
+            with {
+              img: file_url(pillar.entity.field_icon.0.entity.uri.value),
+              label: pillar.entity.title.value,
+              img_alt: pillar.entity.field_icon.0.alt,
+              url: '',
+            }
+          %}
+      </a>
+    </li>
+  {% endfor %}
+  <div class="tab-content" id="pillarTabsContent">
+  {% for pillar in node.field_pillars %}
+  <div class="tab-pane fade{{ loop.index0 == 0 ? ' show active' }}" id="{{- pillar.entity.title.value|lower -}}" role="tabpanel" aria-labelledby="{{- pillar.entity.title.value|lower -}}">
+    {{ drupal_view('policy_accordions', 'block_1', node.id(), pillar.entity.id()) }}
+  </div>
+  {% endfor %}
+  </div>
+  </ul>
 </article>
