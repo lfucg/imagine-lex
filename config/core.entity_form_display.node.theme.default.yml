@@ -10,6 +10,9 @@ dependencies:
     - field.field.node.theme.field_image
     - field.field.node.theme.field_link
     - field.field.node.theme.field_pillars
+    - field.field.node.theme.field_short_name
+    - field.field.node.theme.field_video
+    - field.field.node.theme.field_where_now
     - image.style.thumbnail
     - node.type.theme
   module:
@@ -19,6 +22,7 @@ dependencies:
     - link
     - path
     - text
+    - video_embed_field
 id: node.theme.default
 targetEntityType: node
 bundle: theme
@@ -26,7 +30,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 5
+    weight: 6
     settings:
       rows: 9
       summary_rows: 3
@@ -42,7 +46,7 @@ content:
     type: string_textfield
     region: content
   field_color:
-    weight: 3
+    weight: 4
     settings:
       placeholder_color: ''
       placeholder_opacity: ''
@@ -50,7 +54,7 @@ content:
     type: color_field_widget_default
     region: content
   field_icon:
-    weight: 2
+    weight: 3
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
@@ -58,7 +62,7 @@ content:
     type: image_image
     region: content
   field_image:
-    weight: 4
+    weight: 5
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
@@ -66,7 +70,7 @@ content:
     type: image_image
     region: content
   field_link:
-    weight: 7
+    weight: 10
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -74,7 +78,7 @@ content:
     type: link_default
     region: content
   field_pillars:
-    weight: 6
+    weight: 9
     settings:
       form_mode: default
       label_singular: ''
@@ -89,9 +93,31 @@ content:
     third_party_settings: {  }
     type: inline_entity_form_complex
     region: content
+  field_short_name:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_video:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: video_embed_field_textfield
+    region: content
+  field_where_now:
+    weight: 7
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
   path:
     type: path
-    weight: 8
+    weight: 11
     region: content
     settings: {  }
     third_party_settings: {  }

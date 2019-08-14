@@ -64,14 +64,14 @@ display:
               rendered: true
               rendered_strip: false
               use-grouping-header: 1
-          row_class: slab
+          row_class: 'w-100 pb-2'
           default_row_class: true
           disableifone: 0
           row-start-open: '0'
           collapsible: 0
           animated: none
           animation_time: '300'
-          heightStyle: auto
+          heightStyle: content
           event: click
           use_header_icons: 0
           icon_header: ui-icon-triangle-1-e
@@ -130,7 +130,7 @@ display:
           click_sort_column: value
           type: string
           settings:
-            link_to_entity: true
+            link_to_entity: false
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -432,6 +432,7 @@ display:
           entity_field: nid
           plugin_id: node_nid
       display_extenders: {  }
+      css_class: 'pt-5 px-5'
     cache_metadata:
       max-age: -1
       contexts:

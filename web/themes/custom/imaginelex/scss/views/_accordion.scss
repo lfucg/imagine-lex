@@ -1,0 +1,22 @@
+.ui-accordion {
+  border-radius: 0;
+}
+.ui-state-active, .ui-state-default {
+  color:white;
+  &:active, &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    color: #d8d8d8
+  }
+}
+
+.ui-state-active {
+  border-color: #c5c5c5;
+}
+
+#pillarTabsContent {
+  border-radius: 50px;
+  border: solid 5px;
+}

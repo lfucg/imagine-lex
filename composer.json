@@ -30,6 +30,7 @@
         "drupal/paragraphs": "^1.8",
         "drupal/taxonomy_import": "^1.0",
         "drupal/twig_tweak": "^2.4",
+        "drupal/video_embed_field": "^2.2",
         "drupal/views_accordion": "^1.2",
         "drupal/viewsreference": "^1.4",
         "drush-ops/behat-drush-endpoint": "^9.3",

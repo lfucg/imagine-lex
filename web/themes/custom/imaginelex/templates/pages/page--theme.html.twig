@@ -6,7 +6,8 @@
       {% include '@components/molecules/hero-with-title.twig'
         with {
           imgsrc: file_url(node.field_image.entity.uri.value|image_style('hero_image')),
-          head: node.title.value,
+          head: node.field_short_name.value,
+          sub: "Theme " ~ node.field_abbreviation.value,
         }
       %}
     {% endif %}
