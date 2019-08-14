@@ -30,5 +30,7 @@ content:
 hidden:
   field_criteria: true
   field_file: true
+  field_goals: true
+  field_objectives: true
   field_policy_number: true
   field_topics: true

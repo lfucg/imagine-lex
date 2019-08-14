@@ -1,0 +1,28 @@
+uuid: c0b72aec-0861-4d6a-bc36-c098ef235057
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.objectives.body
+    - node.type.objectives
+  module:
+    - text
+    - user
+id: node.objectives.default
+targetEntityType: node
+bundle: objectives
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

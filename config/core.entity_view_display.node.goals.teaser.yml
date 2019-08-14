@@ -1,0 +1,31 @@
+uuid: 9460e636-6ff3-436e-bff2-040da5fc4fdd
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.goals.body
+    - node.type.goals
+  module:
+    - text
+    - user
+id: node.goals.teaser
+targetEntityType: node
+bundle: goals
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_objectives: true

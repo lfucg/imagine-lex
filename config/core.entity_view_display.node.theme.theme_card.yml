@@ -1,0 +1,68 @@
+uuid: 99974da9-729b-4656-8d62-a0ad846eee64
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.theme_card
+    - field.field.node.theme.body
+    - field.field.node.theme.field_abbreviation
+    - field.field.node.theme.field_color
+    - field.field.node.theme.field_goals
+    - field.field.node.theme.field_icon
+    - field.field.node.theme.field_image
+    - field.field.node.theme.field_link
+    - field.field.node.theme.field_pillars
+    - field.field.node.theme.field_short_name
+    - field.field.node.theme.field_video
+    - field.field.node.theme.field_where_now
+    - image.style.accordion_theme_hero
+    - node.type.theme
+  module:
+    - color_field
+    - image
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.theme.theme_card
+targetEntityType: node
+bundle: theme
+mode: theme_card
+content:
+  field_abbreviation:
+    type: string
+    weight: 1
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_color:
+    type: color_field_formatter_text
+    weight: 2
+    region: content
+    label: above
+    settings:
+      format: hex
+      opacity: '1'
+    third_party_settings: {  }
+  field_image:
+    type: image_url
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: accordion_theme_hero
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_goals: true
+  field_icon: true
+  field_link: true
+  field_pillars: true
+  field_short_name: true
+  field_video: true
+  field_where_now: true
+  links: true

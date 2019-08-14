@@ -1,0 +1,15 @@
+uuid: 8d8580f4-ff8b-4e47-b948-ff4027db6ac1
+langcode: en
+status: true
+dependencies: {  }
+name: accordion_theme_hero
+label: 'Accordion Theme Hero'
+effects:
+  473beac4-18c7-48c8-9bdd-1cc513495643:
+    uuid: 473beac4-18c7-48c8-9bdd-1cc513495643
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 900
+      height: 150
+      anchor: center-center

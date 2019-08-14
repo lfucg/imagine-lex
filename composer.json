@@ -24,6 +24,7 @@
         "drupal/console": "^1",
         "drupal/contentimport": "^4.1",
         "drupal/core": "^8.6.15",
+        "drupal/csv_importer": "^1.5",
         "drupal/draggableviews": "^1.2",
         "drupal/entity_browser": "^2.2",
         "drupal/inline_entity_form": "1.x-dev",

@@ -1,0 +1,15 @@
+uuid: f223155b-30a5-4ea7-86fd-892b02af2357
+langcode: en
+status: true
+dependencies: {  }
+name: square_crop_and_resize
+label: 'Square Crop and Resize'
+effects:
+  b84465aa-9632-4411-9be1-eb7166b1c533:
+    uuid: b84465aa-9632-4411-9be1-eb7166b1c533
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 125
+      height: 125
+      anchor: center-center

@@ -1,0 +1,18 @@
+uuid: 10e2ebe8-caf4-4c84-9fc8-60c9cb64974e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.objectives
+id: node.objectives.title
+field_name: title
+entity_type: node
+bundle: objectives
+label: 'Objective Abbreviation'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

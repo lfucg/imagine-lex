@@ -1,0 +1,18 @@
+uuid: cd2bb454-9c33-4cf0-a94a-441a3bdb4026
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.goals
+id: node.goals.title
+field_name: title
+entity_type: node
+bundle: goals
+label: 'Goal Abbreviation'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
