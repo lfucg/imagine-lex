@@ -1,0 +1,19 @@
+uuid: 9ef7d46a-e207-403a-aff4-30521c39538f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_short_name
+    - node.type.theme
+id: node.theme.field_short_name
+field_name: field_short_name
+entity_type: node
+bundle: theme
+label: 'Short Name'
+description: 'Name to display on when long title name is not necessary.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

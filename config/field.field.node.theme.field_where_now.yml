@@ -1,0 +1,21 @@
+uuid: 010ec03a-a829-4d19-9d9b-5c86c9957d0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_where_now
+    - node.type.theme
+  module:
+    - text
+id: node.theme.field_where_now
+field_name: field_where_now
+entity_type: node
+bundle: theme
+label: 'Where are we now?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

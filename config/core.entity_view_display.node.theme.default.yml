@@ -10,6 +10,9 @@ dependencies:
     - field.field.node.theme.field_image
     - field.field.node.theme.field_link
     - field.field.node.theme.field_pillars
+    - field.field.node.theme.field_short_name
+    - field.field.node.theme.field_video
+    - field.field.node.theme.field_where_now
     - image.style.thumbnail
     - node.type.theme
   module:
@@ -17,6 +20,7 @@ dependencies:
     - link
     - text
     - user
+    - video_embed_field
 id: node.theme.default
 targetEntityType: node
 bundle: theme
@@ -30,7 +34,7 @@ content:
     third_party_settings: {  }
     region: content
   field_icon:
-    weight: 1
+    weight: 3
     label: hidden
     settings:
       image_style: thumbnail
@@ -39,7 +43,7 @@ content:
     type: image
     region: content
   field_link:
-    weight: 2
+    weight: 4
     label: above
     settings:
       trim_length: null
@@ -50,8 +54,28 @@ content:
     third_party_settings: {  }
     type: link
     region: content
+  field_video:
+    weight: 1
+    label: hidden
+    settings:
+      responsive: true
+      width: 854
+      height: 480
+      autoplay: true
+      image_style: ''
+      link_image_to: ''
+    third_party_settings: {  }
+    type: video_embed_field_lazyload
+    region: content
+  field_where_now:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
   links:
-    weight: 3
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -60,3 +84,4 @@ hidden:
   field_color: true
   field_image: true
   field_pillars: true
+  field_short_name: true

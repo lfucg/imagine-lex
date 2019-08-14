@@ -51,8 +51,25 @@ function imaginelex_preprocess_views_accordion_view(&$variables) {
         $variables['accordion_group_color'] = $datas[0]['field_color_value'];
       }
       break;
+    case 'policy_accordions':
+      if ($view->current_display == 'block_1') {
+        $node = \Drupal::routeMatch()->getParameter('node');
+        if ($color = $node->field_color->color) {
+          $variables['accordion_group_color'] = $color;
+        };
+      }
+      break;
     default:
       break;
   }
+}
+/**
+ * Implements hook_preprocess_node().
+ */
+function imaginelex_preprocess_node(&$variables) {
+  $node = \Drupal::routeMatch()->getParameter('node');
+  if (isset($node->field_color) && $color = $node->field_color->color) {
+    $variables['border_color'] = $color;
+  };
 }
 
