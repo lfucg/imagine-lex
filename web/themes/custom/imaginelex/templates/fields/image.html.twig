@@ -13,7 +13,9 @@
 {%
 set classes = [
   style_name ? 'image-style-' ~ style_name|clean_class,
-  'img-fluid'
+  'img-fluid',
+  'colorbox'
 ]
 %}
 <img{{ attributes.addClass(classes) }} />
+{# <a{{ attributes.addClass(classes).addAttribute('d) }}>IMG</a> #}

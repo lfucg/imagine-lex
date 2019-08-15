@@ -10,6 +10,8 @@ module:
   ckeditor: 0
   color: 0
   color_field: 0
+  colorbox: 0
+  colorbox_inline: 0
   comment: 0
   components: 0
   config: 0
@@ -35,6 +37,7 @@ module:
   inline_entity_form: 0
   layout_builder: 0
   layout_discovery: 0
+  libraries: 0
   link: 0
   menu_ui: 0
   node: 0
