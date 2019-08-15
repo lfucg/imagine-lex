@@ -1,0 +1,10 @@
+uuid: 6ae042cb-e07f-403e-afe1-316679ab4046
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.theme_card
+label: 'Theme Card'
+targetEntityType: node
+cache: true

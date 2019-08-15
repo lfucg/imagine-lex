@@ -1,0 +1,37 @@
+uuid: f91d8956-2c3c-4bf1-baeb-03859d1a9790
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.goals.body
+    - field.field.node.goals.field_objectives
+    - node.type.goals
+  module:
+    - text
+    - user
+id: node.goals.default
+targetEntityType: node
+bundle: goals
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_objectives:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

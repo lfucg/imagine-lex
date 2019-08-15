@@ -1,0 +1,28 @@
+uuid: 60b5a85b-ad30-4454-9f19-2f56ec0b052d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_objectives
+    - node.type.goals
+    - node.type.objectives
+id: node.goals.field_objectives
+field_name: field_objectives
+entity_type: node
+bundle: goals
+label: Objectives
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      objectives: objectives
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

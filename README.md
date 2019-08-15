@@ -90,6 +90,19 @@ Lando will use the .lando.yml file to set up your local environment. A simple `l
 You may have to generate a machine token for Lando on Pantheon. To do so go to Pantheon Dashboard --> Account --> Machine Tokens to generate a token for the Lando Machine.
 Run `terminus auth:login --machine-token=<token>` to authenticate the local development machine. Then run `lando pull`.
 
+### Content Import order
+
+1. Taxonomy Terms (all)
+2. Goals
+3. Objectives
+4. Policies
+5. Pillars
+6. Themes
+7. Dev Types
+8. Place Types
+9. Criteria
+
+
 
 
 

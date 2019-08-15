@@ -1,0 +1,22 @@
+uuid: 86d919d9-0a57-4486-86cf-de183376e017
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.objectives
+  module:
+    - text
+id: node.objectives.body
+field_name: body
+entity_type: node
+bundle: objectives
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

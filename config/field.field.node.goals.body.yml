@@ -1,0 +1,22 @@
+uuid: d4938e50-2a75-4eb6-9e9e-494270551180
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.goals
+  module:
+    - text
+id: node.goals.body
+field_name: body
+entity_type: node
+bundle: goals
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

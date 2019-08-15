@@ -71,7 +71,7 @@
     'clearfix',
   ]
 %}
-<div{{ attributes.addClass(classes, 'slab slab--flex-col text-center') }}>
+<div{{ attributes.addClass(classes, 'slab flex-column text-center') }}>
     {{ content }}
     {% include '@components/atoms/subheading-link.twig' with { url: url, label: label } %}
 </div>

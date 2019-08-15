@@ -78,6 +78,16 @@ function imaginelex_preprocess_views_accordion_view(&$variables) {
     case 'taxonomy_term';
         $variables['accordion_group_color'] = '#75B646';
       break;
+    case 'theme_cards';
+      if ($view->current_display == 'block_1') {
+        foreach ($view->result as $rid => $row) {
+          foreach ($view->field as $fid => $field) {
+              $datas[$rid][$fid . '_value'] = $field->getValue($row);
+          }
+        }
+        $variables['accordion_group_color'] = $datas[0]['field_color_value'];
+      }
+      break;
     default:
       break;
   }

@@ -10,6 +10,7 @@ dependencies:
     - field.storage.node.field_land_building_design
     - field.storage.node.field_residential
     - image.style.medium
+    - image.style.square_crop_and_resize
     - node.type.criteria
     - node.type.dev_type
     - node.type.place_type
@@ -336,7 +337,7 @@ display:
           click_sort_column: target_id
           type: image_url
           settings:
-            image_style: medium
+            image_style: square_crop_and_resize
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -462,10 +463,8 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: number_integer
-          settings:
-            thousand_separator: ''
-            prefix_suffix: true
+          type: number_unformatted
+          settings: {  }
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -490,7 +489,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "    {% include '@components/molecules/image-card--with-sub.twig'\r\n      with {\r\n        img: field_icon ,\r\nurl: 'node/' ~ nid,\r\nlabel: title,\r\nlink_variant: 'uppercase'\r\n      }\r\n%}"
+            text: "    {% include '@components/molecules/image-card--with-sub.twig'\r\n      with {\r\n        img: field_icon ,\r\nurl: '/node/' ~ nid,\r\nlabel: title,\r\nlink_variant: 'uppercase'\r\n      }\r\n%}\r\n\r\n"
             make_link: false
             path: ''
             absolute: false

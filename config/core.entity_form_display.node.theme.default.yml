@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.theme.body
     - field.field.node.theme.field_abbreviation
     - field.field.node.theme.field_color
+    - field.field.node.theme.field_goals
     - field.field.node.theme.field_icon
     - field.field.node.theme.field_image
     - field.field.node.theme.field_link
@@ -52,6 +53,15 @@ content:
       placeholder_opacity: ''
     third_party_settings: {  }
     type: color_field_widget_default
+    region: content
+  field_goals:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   field_icon:
     weight: 3

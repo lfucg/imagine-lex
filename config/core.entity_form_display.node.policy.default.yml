@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.field.node.policy.body
     - field.field.node.policy.field_file
+    - field.field.node.policy.field_goals
+    - field.field.node.policy.field_objectives
     - field.field.node.policy.field_policy_number
     - field.field.node.policy.field_topics
     - node.type.policy
@@ -31,6 +33,24 @@ content:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
+    region: content
+  field_goals:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_objectives:
+    weight: 27
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   field_policy_number:
     weight: 0

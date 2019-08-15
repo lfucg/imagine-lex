@@ -1,0 +1,17 @@
+uuid: 0ad6a12f-9afb-4ea1-9faf-692d8c815c49
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Goals
+type: goals
+description: ''
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

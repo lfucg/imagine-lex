@@ -32,33 +32,12 @@
  */
 #}
 
-{# helps with making the accordion headers all over the site that are colored #}
-{% set colors = {
-  '#AA8ABA': 'devtype--lr',
-  '#8658A7': 'devtype--mr',
-  '#6C3C98': 'devtype--mhr',
-  '#3C2B81': 'devtype--hr',
-  '#8D9AB1': 'devtype--lnr-mu',
-  '#596979': 'devtype--mnr-mu',
-  '#183051': 'devtype--hnr-mu',
-  '#1CA281': 'devtype--inr',
-  '#75b646' : 'il-green',
-  '#0c5796' : 'il-blue',
-  '#515151' : 'grey',
-  '#F36E2B' : 'neighborhoods',
-  '#004B4C' : 'environment',
-  '#9079B4' : 'jobs',
-  '#C75657' : 'community',
-  '#8E4A27' : 'balance',
-  '#488CCB' : 'implementation',
-  '#515664' : 'dark-gray',
-} %}
-
+{% import '@components/colors.twig' as helpers %}
 
 {% for field in fields -%}
   {{ field.separator }}
   {%- if field.wrapper_element -%}
-    <{{ field.wrapper_element }}{{ field.wrapper_attributes.addClass(field.handler.field == 'title' and accordion_header_color ? 'slab--' ~ colors[accordion_header_color]) }}>
+    <{{ field.wrapper_element }}{{ field.wrapper_attributes.addClass(field.handler.field == 'title' and accordion_header_color ? 'slab--' ~ helpers.colorFinder(accordion_header_color)) }}>
   {%- endif %}
   {%- if field.label -%}
     {%- if field.label_element -%}
