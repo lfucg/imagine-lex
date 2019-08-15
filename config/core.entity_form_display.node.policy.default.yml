@@ -6,12 +6,15 @@ dependencies:
     - field.field.node.policy.body
     - field.field.node.policy.field_file
     - field.field.node.policy.field_goals
+    - field.field.node.policy.field_images
     - field.field.node.policy.field_objectives
     - field.field.node.policy.field_policy_number
     - field.field.node.policy.field_topics
+    - image.style.thumbnail
     - node.type.policy
   module:
     - file
+    - image
     - text
 id: node.policy.default
 targetEntityType: node
@@ -42,6 +45,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
+  field_images:
+    weight: 28
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
     region: content
   field_objectives:
     weight: 27
