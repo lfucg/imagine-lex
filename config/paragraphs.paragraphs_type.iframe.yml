@@ -1,0 +1,9 @@
+uuid: 68924562-673c-4568-a4f6-8856f69c5767
+langcode: en
+status: true
+dependencies: {  }
+id: iframe
+label: iframe
+icon_uuid: null
+description: 'Add a link to embed an iframe. You will only need to add a link to the src.'
+behavior_plugins: {  }

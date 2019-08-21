@@ -1,0 +1,21 @@
+uuid: dad1c03b-a5cc-4250-9e34-0f589c319a5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - paragraphs.paragraphs_type.accordion_section
+  module:
+    - text
+id: paragraph.accordion_section.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: accordion_section
+label: 'Accordion Section Description'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

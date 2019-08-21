@@ -1,0 +1,27 @@
+uuid: ce9b6a56-c084-423c-9799-01bb869ad97c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.iframe.field_link
+    - paragraphs.paragraphs_type.iframe
+  module:
+    - link
+id: paragraph.iframe.default
+targetEntityType: paragraph
+bundle: iframe
+mode: default
+content:
+  field_link:
+    weight: 0
+    label: hidden
+    settings:
+      trim_length: null
+      url_only: true
+      url_plain: true
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden: {  }

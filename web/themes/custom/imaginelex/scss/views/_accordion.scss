@@ -1,8 +1,19 @@
 .ui-accordion {
   border-radius: 0;
 }
+
 .ui-state-active, .ui-state-default {
   color:white;
+  &.paragraph-accordion {
+    background-color: #cccccc;
+    a {
+      color: #454545;
+      &:hover {
+        color: #5c5c5c;
+      }
+    }
+  }
+
   &:active, &:focus {
     outline: none;
   }

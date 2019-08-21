@@ -1,0 +1,23 @@
+uuid: b3d16778-1a1f-4a64-90fa-785d77152043
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link
+    - paragraphs.paragraphs_type.iframe
+  module:
+    - link
+id: paragraph.iframe.field_link
+field_name: field_link
+entity_type: paragraph
+bundle: iframe
+label: 'Link (src)'
+description: 'Add the src attribute used to embed the iframe. '
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

@@ -1,0 +1,9 @@
+uuid: 4753c032-01a2-47dc-afeb-e7dd8184f8a0
+langcode: en
+status: true
+dependencies: {  }
+id: accordion
+label: Accordion
+icon_uuid: null
+description: 'This is the accordion that will go within the accordion section. '
+behavior_plugins: {  }
