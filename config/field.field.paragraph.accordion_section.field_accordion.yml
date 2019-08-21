@@ -1,0 +1,43 @@
+uuid: f84aa803-a0c6-46d6-90a8-1dadf7df86ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_accordion
+    - paragraphs.paragraphs_type.accordion
+    - paragraphs.paragraphs_type.accordion_section
+  module:
+    - entity_reference_revisions
+id: paragraph.accordion_section.field_accordion
+field_name: field_accordion
+entity_type: paragraph
+bundle: accordion_section
+label: Accordion
+description: 'Add multiple "entries" for accordions.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      accordion: accordion
+    target_bundles_drag_drop:
+      accordion:
+        enabled: true
+        weight: 6
+      accordion_section:
+        weight: 7
+        enabled: false
+      full_width_image:
+        weight: 8
+        enabled: false
+      iframe:
+        weight: 9
+        enabled: false
+      views_block:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

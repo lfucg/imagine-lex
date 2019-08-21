@@ -1,0 +1,9 @@
+uuid: 54483a2a-b0f0-4aba-8d21-ae008a7aebba
+langcode: en
+status: true
+dependencies: {  }
+id: accordion_section
+label: 'Accordion Section'
+icon_uuid: null
+description: 'Section containing accordion. Includes section title, description, and then multiple within.'
+behavior_plugins: {  }
