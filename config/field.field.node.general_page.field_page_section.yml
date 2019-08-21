@@ -36,6 +36,7 @@ settings:
         weight: 3
       iframe:
         enabled: true
+      video:
         weight: 4
       full_width_image:
         enabled: true
