@@ -5,10 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_page_section
     - node.type.general_page
-    - paragraphs.paragraphs_type.accordion_section
-    - paragraphs.paragraphs_type.full_width_image
-    - paragraphs.paragraphs_type.iframe
-    - paragraphs.paragraphs_type.views_block
+    - paragraphs.paragraphs_type.accordion
   module:
     - entity_reference_revisions
 id: node.general_page.field_page_section
@@ -16,7 +13,7 @@ field_name: field_page_section
 entity_type: node
 bundle: general_page
 label: 'Page Section'
-description: 'Add page sections by selecting from the dropdown and adding the component you wish. These will render on the page in the order they are added here. '
+description: ''
 required: false
 translatable: false
 default_value: {  }
@@ -24,27 +21,29 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
+    negate: 1
     target_bundles:
-      views_block: views_block
-      iframe: iframe
-      full_width_image: full_width_image
-      accordion_section: accordion_section
+      accordion: accordion
     target_bundles_drag_drop:
       views_block:
-        enabled: true
         weight: 3
-      iframe:
-        enabled: true
+        enabled: false
       video:
         weight: 4
-      full_width_image:
-        enabled: true
-        weight: 5
-      accordion:
-        weight: 6
         enabled: false
-      accordion_section:
+      full_width_image:
+        weight: 5
+        enabled: false
+      accordion:
         enabled: true
-        weight: 7
+        weight: 8
+      accordion_section:
+        weight: 9
+        enabled: false
+      body_text:
+        weight: 10
+        enabled: false
+      iframe:
+        weight: 14
+        enabled: false
 field_type: entity_reference_revisions
