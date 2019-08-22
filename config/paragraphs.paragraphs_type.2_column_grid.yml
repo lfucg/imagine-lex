@@ -1,0 +1,9 @@
+uuid: 0cda8ca6-c138-4a7a-a30e-c5d0347ebf75
+langcode: en
+status: true
+dependencies: {  }
+id: 2_column_grid
+label: '2 Column Grid (Text and Image)'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

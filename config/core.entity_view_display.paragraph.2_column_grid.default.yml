@@ -1,0 +1,41 @@
+uuid: 48b41c69-b59a-4ee3-a0d7-9e67f33774c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.2_column_grid.field_description
+    - field.field.paragraph.2_column_grid.field_heading
+    - field.field.paragraph.2_column_grid.field_image
+    - paragraphs.paragraphs_type.2_column_grid
+  module:
+    - image
+    - text
+id: paragraph.2_column_grid.default
+targetEntityType: paragraph
+bundle: 2_column_grid
+mode: default
+content:
+  field_description:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_heading:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_image:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden: {  }
