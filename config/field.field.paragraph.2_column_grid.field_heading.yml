@@ -1,0 +1,21 @@
+uuid: 5101043f-350f-4f54-924d-076161b2f24b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading
+    - paragraphs.paragraphs_type.2_column_grid
+  module:
+    - text
+id: paragraph.2_column_grid.field_heading
+field_name: field_heading
+entity_type: paragraph
+bundle: 2_column_grid
+label: Heading
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text
