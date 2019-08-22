@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.staff.body
+    - field.field.node.staff.field_hero_image
     - field.field.node.staff.field_staff_department
     - field.field.node.staff.field_staff_photo
     - field.field.node.staff.field_staff_position
@@ -25,6 +26,14 @@ content:
       summary_rows: 3
       placeholder: ''
     third_party_settings: {  }
+    region: content
+  field_hero_image:
+    weight: 26
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
     region: content
   field_staff_department:
     weight: 3

@@ -1,0 +1,22 @@
+{% block content %}
+  <div id="main" class="{{ container }}">
+    {% if node.field_hero_image.entity.uri.value %}
+      {% include '@components/molecules/hero-with-title-and-subtitle.twig'
+        with {
+          imgsrc: file_url(node.field_hero_image.entity.uri.value|image_style('hero_image')),
+          head: node.title.value,
+          sub: node.field_staff_position.value,
+        }
+      %}
+    {% endif %}
+    {{ page.breadcrumb }}
+    <div class="row row-offcanvas row-offcanvas-left clearfix">
+        <main{{ content_attributes }}>
+          <section class="section">
+            <a id="main-content" tabindex="-1"></a>
+            {{ page.content }}
+          </section>
+        </main>
+    </div>
+  </div>
+{% endblock %}
