@@ -1,0 +1,9 @@
+uuid: 993bef3d-92a4-4a6b-9ae0-053826c232de
+langcode: en
+status: true
+dependencies: {  }
+id: slider
+label: Slider
+icon_uuid: null
+description: 'Slick carousel slider. '
+behavior_plugins: {  }

@@ -3,7 +3,9 @@ module:
   admin_toolbar_tools: 0
   adminimal_admin_toolbar: 0
   automated_cron: 0
+  back_to_top: 0
   big_pipe: 0
+  blazy: 0
   block: 0
   block_content: 0
   breakpoint: 0
@@ -39,6 +41,7 @@ module:
   layout_discovery: 0
   libraries: 0
   link: 0
+  media: 0
   menu_ui: 0
   node: 0
   options: 0
@@ -49,6 +52,9 @@ module:
   rdf: 0
   search: 0
   shortcut: 0
+  slick: 0
+  slick_paragraphs: 0
+  slick_ui: 0
   system: 0
   taxonomy: 0
   taxonomy_import: 0

@@ -1,0 +1,9 @@
+uuid: 1b5b4715-5822-40e9-8da7-20b3789d8a54
+langcode: en
+status: true
+dependencies: {  }
+id: image_grid_lightbox_images_
+label: 'Image Grid (Lightbox Images)'
+icon_uuid: null
+description: 'Grid of images to open in light box, with ability to specify the number of columns, '
+behavior_plugins: {  }

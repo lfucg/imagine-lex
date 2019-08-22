@@ -25,3 +25,17 @@ div#block-imaginelex-branding {
 .row {
   margin: 0;
 }
+
+#backtotop {
+  background: url(../images/backtotop.png) no-repeat center center;
+  background-size: 70px 85px;
+  bottom: 20px;
+  cursor: pointer;
+  display: none;
+  height: 85px;
+  position: fixed;
+  right: 20px;
+  text-indent:-9999px;
+  width: 70px;
+  z-index: 300;
+}

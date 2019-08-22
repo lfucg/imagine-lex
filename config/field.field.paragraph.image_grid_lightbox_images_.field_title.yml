@@ -1,0 +1,19 @@
+uuid: 1a2043f6-7906-41d8-bf7b-76b1f851f834
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.image_grid_lightbox_images_
+id: paragraph.image_grid_lightbox_images_.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: image_grid_lightbox_images_
+label: Header
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

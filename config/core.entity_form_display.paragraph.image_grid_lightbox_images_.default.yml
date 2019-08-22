@@ -1,0 +1,42 @@
+uuid: 64fac703-0347-40bd-a5ef-97a14c711c2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_grid_lightbox_images_.field_columns
+    - field.field.paragraph.image_grid_lightbox_images_.field_images
+    - field.field.paragraph.image_grid_lightbox_images_.field_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.image_grid_lightbox_images_
+  module:
+    - image
+id: paragraph.image_grid_lightbox_images_.default
+targetEntityType: paragraph
+bundle: image_grid_lightbox_images_
+mode: default
+content:
+  field_columns:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_images:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

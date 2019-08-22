@@ -1,0 +1,33 @@
+{%
+  set classes = [
+    'field',
+    'field--name-' ~ field_name|clean_class,
+    'field--type-' ~ field_type|clean_class,
+    'field--label-' ~ label_display,
+    'col-12 py-2 d-flex justify-content-center'
+  ]
+%}
+{%
+  set title_classes = [
+    'field__label',
+    label_display == 'visually_hidden' ? 'visually-hidden',
+  ]
+%}
+
+<div{{ attributes.addClass(classes, 'field__items' ) }}>
+  {% for item in items %}
+    {% if loop.index == 1 %}
+      {% if item.content['#entity'].field_columns.value == 2 %}
+        {% set col_width = 'col-6' %}
+      {% elseif item.content['#entity'].field_columns.value == 3 %}
+        {% set col_width = 'col-4' %}
+      {% else %}
+        {% set col_width = 'col-3' %}
+      {% endif %}
+    {% endif %}
+    <div{{ item.attributes.addClass('field__item', col_width ) }}>
+      {{ item.content }}
+      {% include '@components/atoms/subheading.twig' with { label: 'CLICK TO ENLARGE' } %}
+    </div>
+  {% endfor %}
+</div>

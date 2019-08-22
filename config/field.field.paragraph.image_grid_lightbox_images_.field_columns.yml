@@ -1,0 +1,21 @@
+uuid: a54d4d67-65af-409b-9fc4-ea0e034ea228
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_columns
+    - paragraphs.paragraphs_type.image_grid_lightbox_images_
+  module:
+    - options
+id: paragraph.image_grid_lightbox_images_.field_columns
+field_name: field_columns
+entity_type: paragraph
+bundle: image_grid_lightbox_images_
+label: 'Grid Size (columns)'
+description: 'Select how many images you''d like to present per row.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer
