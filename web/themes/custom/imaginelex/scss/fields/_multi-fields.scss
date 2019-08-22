@@ -20,3 +20,10 @@
 .field_development_types__item {
   max-width: 25%;
 }
+
+.slick-arrow::before {
+  color: color(il-blue);
+  &:hover::before {
+    color: color(dark-gray);
+  }
+}

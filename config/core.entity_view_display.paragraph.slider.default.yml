@@ -1,0 +1,92 @@
+uuid: cbac6614-71a4-40f7-a835-62f05de4c463
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.slider.field_images
+    - field.field.paragraph.slider.field_title
+    - paragraphs.paragraphs_type.slider
+  module:
+    - slick
+id: paragraph.slider.default
+targetEntityType: paragraph
+bundle: slider
+mode: default
+content:
+  field_images:
+    weight: 1
+    label: hidden
+    settings:
+      style: grid
+      optionset: default
+      optionset_thumbnail: ''
+      skin: classic
+      skin_thumbnail: asnavfor
+      image_style: ''
+      thumbnail_effect: hover
+      thumbnail_position: ''
+      media_switch: ''
+      box_style: ''
+      thumbnail_style: ''
+      ratio: fluid
+      box_caption: ''
+      box_caption_custom: ''
+      grid: null
+      grid_medium: null
+      grid_small: null
+      visible_items: null
+      layout: ''
+      thumbnail_caption: ''
+      cache: 0
+      sizes: ''
+      breakpoints:
+        xs:
+          image_style: ''
+          width: ''
+        sm:
+          image_style: ''
+          width: ''
+        md:
+          image_style: ''
+          width: ''
+        lg:
+          image_style: ''
+          width: ''
+        xl:
+          image_style: ''
+          width: ''
+      current_view_mode: default
+      background: false
+      caption:
+        title: '0'
+        alt: '0'
+      preserve_keys: false
+      override: false
+      overridables:
+        arrows: '0'
+        autoplay: '0'
+        dots: '0'
+        draggable: '0'
+        infinite: '0'
+        mouseWheel: '0'
+        randomize: '0'
+        variableWidth: '0'
+      skin_arrows: ''
+      skin_dots: ''
+      icon: ''
+      view_mode: ''
+      box_media_style: ''
+      responsive_image_style: ''
+      grid_header: ''
+    third_party_settings: {  }
+    type: slick_image
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }
