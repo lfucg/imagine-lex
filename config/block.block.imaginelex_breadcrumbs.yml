@@ -11,7 +11,7 @@ _core:
 id: imaginelex_breadcrumbs
 theme: imaginelex
 region: breadcrumbs
-weight: 0
+weight: -7
 provider: null
 plugin: system_breadcrumb_block
 settings:

@@ -1,4 +1,4 @@
-uuid: 7d371312-1400-476b-aba0-40b193ac6e2f
+uuid: acd5911d-03cc-4bf6-97ed-b2884c6f8fa3
 langcode: en
 status: true
 dependencies:
@@ -8,25 +8,18 @@ dependencies:
     - system
   theme:
     - imaginelex
-_core:
-  default_config_hash: ChCx7DYNUrPTt5uiRdQAPDKJQMc-_SyAQTrZh8H0o-c
-id: imaginelex_main_menu
+id: mainnavigation
 theme: imaginelex
 region: header
-weight: -6
+weight: -4
 provider: null
 plugin: 'system_menu_block:main'
 settings:
   id: 'system_menu_block:main'
   label: 'Main navigation'
   provider: system
-  label_display: '0'
+  label_display: visible
   level: 1
-  depth: 2
+  depth: 0
   expand_all_items: false
-visibility:
-  request_path:
-    id: request_path
-    pages: '/admin/*'
-    negate: true
-    context_mapping: {  }
+visibility: {  }

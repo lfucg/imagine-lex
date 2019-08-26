@@ -54,10 +54,25 @@
   margin: 5px 20px 0 0;
 }
 
+.header-logos {
+  text-align: center;
+}
+
+.imagine-logo > .header-triangle {
+  color: #0c5796;
+}
+
+.inform-logo > .header-triangle {
+  color: #515151;
+}
+
+.implement-logo > .header-triangle {
+  color: #75b646;
+}
+
 .header-triangle {
   font-size: 15px;
   margin: 5px 10px 0 0;
-  color: #434343;
 }
 
 .header-contact > button {
@@ -65,7 +80,7 @@
   color: white;
   border: none;
   width: 125px;
-  margin-left: 10px;
+  float: right;
 }
 
 .header-hamburger {
@@ -73,4 +88,23 @@
   border: none;
   cursor: pointer;
   margin-left: 10px;
+}
+
+.header-hamburger:focus {
+  outline: none !important;
+}
+
+@media (max-width: 576px) {
+  .header-contact {
+    display: none;
+  }
+  .header-hamburger {
+    margin-left: 0;
+  }
+  .header-container {
+    margin: 0;
+  }
+  .header-btn {
+    padding-left: 0 !important;
+  }
 }
