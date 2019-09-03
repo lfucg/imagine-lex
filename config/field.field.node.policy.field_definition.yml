@@ -1,0 +1,19 @@
+uuid: 5f1b2244-765a-4663-b40a-4a486584ac17
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_definition
+    - node.type.policy
+id: node.policy.field_definition
+field_name: field_definition
+entity_type: node
+bundle: policy
+label: Definition
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long
