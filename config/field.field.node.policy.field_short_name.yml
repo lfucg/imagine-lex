@@ -1,0 +1,19 @@
+uuid: e97d3f53-9189-4dab-af59-1c20a9d94eea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_short_name
+    - node.type.policy
+id: node.policy.field_short_name
+field_name: field_short_name
+entity_type: node
+bundle: policy
+label: 'Display Name'
+description: 'Name to be displayed on the headers of the accordions and page headers.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
