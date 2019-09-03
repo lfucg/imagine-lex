@@ -13,3 +13,70 @@
     border-bottom: 5px solid color(il-green); /* This creates the border. Replace black with whatever color you want. */
   }
 }
+
+.monopoly-card-A {
+  border: 2px solid #f36e2b;
+}
+
+.monopoly-card-B {
+  border: 2px solid #004b4c;
+}
+
+.monopoly-card-C {
+  border: 2px solid #9079b4;
+}
+
+.monopoly-card-D {
+  border: 2px solid #c75657;
+}
+
+.monopoly-card-E {
+  border: 2px solid #8e4a27;
+}
+
+.theme-A {
+  background-color: #f36e2b;
+}
+
+.theme-B {
+  background-color: #004b4c;
+}
+
+.theme-C {
+  background-color: #9079b4;
+}
+
+.theme-D {
+  background-color: #c75657;
+}
+
+.theme-E {
+  background-color: #8e4a27;
+}
+
+.card-header {
+  color: white;
+}
+
+.monopoly-card {
+  margin: 10px auto;
+}
+
+.pillar-row {
+  margin-bottom: 20px !important;
+}
+
+.pillar-content {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.theme-icon > img {
+  margin-right: 10px;
+  max-width: 100px;
+}
+
+.pillar-content > img {
+  max-width: 40px;
+  margin-right: 10px;
+}
