@@ -12,7 +12,7 @@
 }
 
 .header-row {
-  margin-top: 10px;
+  line-height: 100%;
 }
 
 .header-btn {
@@ -87,11 +87,14 @@
   background: transparent;
   border: none;
   cursor: pointer;
-  margin-left: 10px;
 }
 
 .header-hamburger:focus {
   outline: none !important;
+}
+
+.header-btn {
+  padding-left: 0 !important;
 }
 
 @media (max-width: 576px) {
@@ -103,8 +106,5 @@
   }
   .header-container {
     margin: 0;
-  }
-  .header-btn {
-    padding-left: 0 !important;
   }
 }

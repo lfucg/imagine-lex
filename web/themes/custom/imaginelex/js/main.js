@@ -11,12 +11,15 @@ function searchCollapse() {
 function takeoverOpen() {
     document.getElementById('takeover-nav').style.visibility="visible";
     document.getElementById('takeover-nav').style.opacity = "0.9";
+    document.getElementById('header-row').style.opacity = "0";
+    document.body.style.overflow = "hidden";
 }
 
 function takeoverClose() {
     document.getElementById('takeover-nav').style.visibility="hidden";
     document.getElementById('takeover-nav').style.opacity = "0";
-
+    document.getElementById('header-row').style.opacity = "1"
+    document.body.style.overflow = "scroll";
 }
 
 function navListToggle() {
