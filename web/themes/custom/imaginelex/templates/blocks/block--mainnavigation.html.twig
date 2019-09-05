@@ -1,0 +1,52 @@
+<div id="takeover-nav" class="takeover-nav">
+    <div class="takeover-top row">
+        <div class="takeover-close col-2 col-sm-1">
+            <button class="close-btn" onClick="takeoverClose()">
+                <h4>X</h4>
+            </button>
+        </div>
+        <div class="takeover-logo col-8 col-sm-9 offset-sm-1 col-md-6 offset-md-3 col-lg-4 offset-lg-4">
+            <img src="/themes/custom/imaginelex/Imagine-Lex-White.png">
+        </div>
+    </div>
+    <div class="takeover-navigation">
+        <div class="mt-5 row text-center">
+            {% for item in content['#items'] %}
+                <div class="col-sm-12 col-md-4">
+                    <h3 class="nav-headings">{{item.title}}</h3>
+                    <ul>
+                        {% for sub in item.below %}
+                            {% if sub.below != [] %}
+                                <li class="nav-subheadings-list">
+                                    <a href="#" class="takeover-list" onClick="navListToggle()">
+                                        <h4>
+                                            <span id="closed-icon"><i class="fas fa-chevron-right"></i></span>
+                                            <span id="expanded-icon"><i class="fas fa-chevron-down"></i></span>
+                                            {{sub.title}}
+                                        </h4>
+                                    </a>
+                                    <ul id="link-list">
+                                        {% for link in sub.below %}
+                                            <li class="nav-sublinks">
+                                                <a href="{{link.url}}">
+                                                    <h5>{{link.title}}</h5>
+                                                </a>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                </li>
+                            {% else %}
+                                <li class="nav-subheadings">
+                                    <a href="{{sub.url}}" class="takeover-link">
+                                        <h4>{{sub.title}}</h4>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+        {# {{dd(content['#items'])}} #}
+</div>

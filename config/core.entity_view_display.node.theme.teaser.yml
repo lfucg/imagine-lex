@@ -30,9 +30,11 @@ content:
 hidden:
   field_abbreviation: true
   field_color: true
+  field_goals: true
   field_icon: true
   field_image: true
   field_link: true
   field_pillars: true
   field_short_name: true
+  field_video: true
   field_where_now: true
