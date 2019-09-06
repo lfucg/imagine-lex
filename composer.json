@@ -30,6 +30,7 @@
         "drupal/csv_importer": "^1.5",
         "drupal/draggableviews": "^1.2",
         "drupal/entity_browser": "^2.2",
+        "drupal/imce": "^1.7",
         "drupal/inline_entity_form": "1.x-dev",
         "drupal/libraries": "^3.0@alpha",
         "drupal/paragraphs": "^1.8",
@@ -112,7 +113,8 @@
                 "fix layout builder": "https://www.drupal.org/files/issues/2018-06-01/2976934-3.patch"
             },
             "drupal/contentimport" : {
-                "allow list (text) imports" : "https://www.drupal.org/files/issues/2018-07-03/2948733-5.patch"
+                "allow list (text) imports" : "https://www.drupal.org/files/issues/2018-07-03/2948733-5.patch",
+                "import path alias": "https://www.drupal.org/files/issues/2018-05-04/contentimport-d8-2964696-%233.patch"
             }
         }
     },

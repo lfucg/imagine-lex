@@ -1,0 +1,19 @@
+uuid: f157fc5b-0190-42f6-aea8-5e482c19b454
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bulleted_list
+    - node.type.policy
+id: node.policy.field_bulleted_list
+field_name: field_bulleted_list
+entity_type: node
+bundle: policy
+label: 'Action Item(s)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

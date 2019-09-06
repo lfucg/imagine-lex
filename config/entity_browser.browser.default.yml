@@ -1,0 +1,28 @@
+uuid: a530c572-4f87-46f2-84e4-0a9c650b3ce5
+langcode: en
+status: true
+dependencies: {  }
+name: default
+label: Default
+display: modal
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Select entities'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  ad127c42-55b9-4dc7-af66-2be11bc485d6:
+    settings:
+      extensions: 'jpg jpeg png gif'
+      media_type: image
+      upload_location: 'public://'
+      multiple: '1'
+      submit_text: 'Select files'
+    uuid: ad127c42-55b9-4dc7-af66-2be11bc485d6
+    weight: 1
+    label: media_image_upload
+    id: media_image_upload

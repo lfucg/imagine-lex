@@ -29,9 +29,11 @@ content:
     region: content
 hidden:
   field_criteria: true
+  field_definition: true
   field_file: true
   field_goals: true
   field_images: true
   field_objectives: true
   field_policy_number: true
+  field_short_name: true
   field_topics: true

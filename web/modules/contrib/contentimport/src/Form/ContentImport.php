@@ -279,6 +279,7 @@ class ContentImport extends ConfigFormBase {
             array_push($fieldTypes, 'text');
             array_push($fieldNames, 'langcode');
             array_push($fieldTypes, 'lang');
+            array_push($fieldNames, 'path');
             if (array_search('langcode', $data) === FALSE) {
               $logVariationFields .= "Langcode missing --- Assuming EN as default langcode.. Import continues  \n \n";
               $data[count($data)] = 'langcode';
@@ -356,7 +357,7 @@ class ContentImport extends ConfigFormBase {
                 }
                 $logVariationFields .= " Success \n";
                 break;
-
+                            
               case 'text_long':
               case 'text':
                 $logVariationFields .= "Importing Content (" . $fieldNames[$f] . ") :: ";
@@ -457,6 +458,12 @@ class ContentImport extends ConfigFormBase {
                 $nodeArray[$fieldNames[$f]] = $data[$keyIndex[$fieldNames[$f]]];
                 break;
             }
+
+            /* path alias added for node array */
+            if($fieldNames[$f] == 'path'){
+            $path_data = !empty($data[$keyIndex[$fieldNames[$f]]])? $data[$keyIndex[$fieldNames[$f]]]: '';
+              $nodeArray['path'] = ['alias' => $path_data];
+           } 
           }
 
           if (array_search('langcode', $data) === FALSE) {
