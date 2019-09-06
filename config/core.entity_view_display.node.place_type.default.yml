@@ -6,17 +6,17 @@ dependencies:
     - field.field.node.place_type.body
     - field.field.node.place_type.field_bulleted_list
     - field.field.node.place_type.field_development_types
-    - field.field.node.place_type.field_featured_image
     - field.field.node.place_type.field_file
     - field.field.node.place_type.field_icon
     - field.field.node.place_type.field_image
     - field.field.node.place_type.field_recommended_zones
+    - field.field.node.place_type.field_video
     - node.type.place_type
   module:
     - file
-    - image
     - text
     - user
+    - video_embed_field
 id: node.place_type.default
 targetEntityType: node
 bundle: place_type
@@ -46,15 +46,6 @@ content:
     third_party_settings: {  }
     type: entity_reference_entity_view
     region: content
-  field_featured_image:
-    weight: 3
-    label: hidden
-    settings:
-      image_style: ''
-      image_link: ''
-    third_party_settings: {  }
-    type: image
-    region: content
   field_file:
     weight: 6
     label: above
@@ -70,6 +61,17 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
+  field_video:
+    weight: 7
+    label: above
+    settings:
+      responsive: true
+      width: 854
+      height: 480
+      autoplay: true
+    third_party_settings: {  }
+    type: video_embed_field_video
     region: content
   links:
     weight: 0

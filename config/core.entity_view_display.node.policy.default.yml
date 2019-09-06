@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - field.field.node.policy.body
+    - field.field.node.policy.field_boolean
+    - field.field.node.policy.field_bulleted_list
     - field.field.node.policy.field_definition
     - field.field.node.policy.field_file
     - field.field.node.policy.field_goals
@@ -73,6 +75,8 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_boolean: true
+  field_bulleted_list: true
   field_file: true
   field_policy_number: true
   field_short_name: true

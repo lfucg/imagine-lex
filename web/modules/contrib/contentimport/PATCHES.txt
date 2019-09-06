@@ -5,3 +5,7 @@ allow list (text) imports
 Source: https://www.drupal.org/files/issues/2018-07-03/2948733-5.patch
 
 
+import path alias
+Source: https://www.drupal.org/files/issues/2018-05-04/contentimport-d8-2964696-%233.patch
+
+
