@@ -6,11 +6,11 @@ dependencies:
     - field.field.node.place_type.body
     - field.field.node.place_type.field_bulleted_list
     - field.field.node.place_type.field_development_types
-    - field.field.node.place_type.field_featured_image
     - field.field.node.place_type.field_file
     - field.field.node.place_type.field_icon
     - field.field.node.place_type.field_image
     - field.field.node.place_type.field_recommended_zones
+    - field.field.node.place_type.field_video
     - image.style.thumbnail
     - node.type.place_type
   module:
@@ -19,6 +19,7 @@ dependencies:
     - inline_entity_form
     - path
     - text
+    - video_embed_field
 id: node.place_type.default
 targetEntityType: node
 bundle: place_type
@@ -57,14 +58,6 @@ content:
     third_party_settings: {  }
     type: inline_entity_form_complex
     region: content
-  field_featured_image:
-    weight: 5
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-    type: image_image
-    region: content
   field_file:
     weight: 8
     settings:
@@ -96,6 +89,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
+  field_video:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: video_embed_field_textfield
     region: content
   path:
     type: path

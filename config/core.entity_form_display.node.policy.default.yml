@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - field.field.node.policy.body
+    - field.field.node.policy.field_boolean
+    - field.field.node.policy.field_bulleted_list
     - field.field.node.policy.field_definition
     - field.field.node.policy.field_file
     - field.field.node.policy.field_goals
@@ -31,6 +33,21 @@ content:
       summary_rows: 3
       placeholder: ''
     third_party_settings: {  }
+    region: content
+  field_boolean:
+    weight: 26
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_bulleted_list:
+    weight: 27
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   field_definition:
     weight: 3
