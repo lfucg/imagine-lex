@@ -90,24 +90,20 @@ Lando will use the .lando.yml file to set up your local environment. A simple `l
 You may have to generate a machine token for Lando on Pantheon. To do so go to Pantheon Dashboard --> Account --> Machine Tokens to generate a token for the Lando Machine.
 Run `terminus auth:login --machine-token=<token>` to authenticate the local development machine. Then run `lando pull`.
 
-### Content Import order
+### Before importing any content
 
-1. Taxonomy Terms (all)
-2. Goals
-3. Objectives
-4. Policies
-5. Pillars
-6. Themes
-7. Dev Types
-8. Place Types
-9. Criteria
+Visit www.mysite.com/imce and upload all images for heros and icons to [content_type_machine_name]/images/. Naming is very important.
 
+### Content Import order (number in parentheses designates number of total content after import)
 
-
-
-
-
-
-
-
+1. Taxonomy Terms (3 different vocabularies)
+2. Goals (21)
+3. Objectives (84)
+4. Policies (222)
+5. Pillars (237)
+6. Themes (242)
+7. Dev Types (250)
+8. Place Types (257)
+9. Criteria (347)
+10. General Page (354)
 
