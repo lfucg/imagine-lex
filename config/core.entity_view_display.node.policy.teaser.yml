@@ -28,6 +28,8 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_boolean: true
+  field_bulleted_list: true
   field_criteria: true
   field_definition: true
   field_file: true
