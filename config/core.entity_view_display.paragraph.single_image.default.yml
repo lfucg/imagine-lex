@@ -1,0 +1,29 @@
+uuid: 5361fb6b-bc99-410e-b89a-90fbe622595a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.single_image.field_image
+    - paragraphs.paragraphs_type.single_image
+  module:
+    - colorbox
+id: paragraph.single_image.default
+targetEntityType: paragraph
+bundle: single_image
+mode: default
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      colorbox_node_style: ''
+      colorbox_node_style_first: ''
+      colorbox_image_style: ''
+      colorbox_gallery: post
+      colorbox_gallery_custom: ''
+      colorbox_caption: auto
+      colorbox_caption_custom: ''
+    third_party_settings: {  }
+    type: colorbox
+    region: content
+hidden: {  }

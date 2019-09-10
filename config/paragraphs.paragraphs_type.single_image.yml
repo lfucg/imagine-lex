@@ -1,0 +1,9 @@
+uuid: 718c41fc-ee34-4e74-b368-4adb0218f24b
+langcode: en
+status: true
+dependencies: {  }
+id: single_image
+label: 'Single Image (Lightbox)'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }
