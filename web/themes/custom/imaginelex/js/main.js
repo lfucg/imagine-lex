@@ -23,13 +23,17 @@ function takeoverClose() {
 }
 
 function navListToggle() {
-    if (document.getElementById('link-list').style.maxHeight != "800px") {
-        document.getElementById('link-list').style.maxHeight = "800px";
-        document.getElementById('closed-icon').style.display = "none";
-        document.getElementById('expanded-icon').style.display = "inline-block";
+    if (!this.classList.contains('activated')) {
+        this.classList.add('activated');
     }else {
-        document.getElementById('link-list').style.maxHeight = "0";
-        document.getElementById('closed-icon').style.display = "inline-block";
-        document.getElementById('expanded-icon').style.display = "none";
+       this.classList.remove('activated');
     }
 }
+
+// function navSubListToggle() {
+//     if (!this.classList.contains('activate')) {
+//         this.classList.add('activate');
+//     } else {
+//         this.classList.remove('activate');
+//     }
+// }

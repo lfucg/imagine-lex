@@ -51,7 +51,7 @@
 .nav-subheadings, .nav-subheadings-list {
     text-align: left;
     list-style-type: none;
-    h4 {
+    h4, h5 {
         color: white;
     }
 }
@@ -64,6 +64,10 @@
     margin: 30px 30px 30px 15px;
 }
 
+.link-list > .nav-subheadings-list {
+    margin: 10px 30px 10px 15px !important;
+}
+
 .nav-sublinks {
     text-align: left;
     list-style-type: none;
@@ -73,15 +77,15 @@
     }
 }
 
-#closed-icon {
+.closed-icon {
     display: inline-block;
 }
 
-#expanded-icon {
+.expanded-icon {
     display: none;
 }
 
-#link-list {
+.link-list {
     max-height: 0px;
     overflow: hidden;
     -webkit-transition: all 0.5s ease-in-out;
@@ -94,5 +98,29 @@
     cursor: pointer;
     h4, h5 {
         text-decoration: underline;
+    }
+}
+
+.link-sublist {
+    max-height: 0px;
+    overflow: hidden;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: 0.5s;
+}
+
+.activated {
+    .link-list {
+        max-height: 800px; 
+    }
+    .link-sublist {
+        max-height: 800px;
+    }
+    .closed-icon {
+        display: none;
+    }
+    .expanded-icon {
+        display: inline-block;
     }
 }
