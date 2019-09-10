@@ -337,7 +337,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "{% include '@components/molecules/image-card--with-sub.twig'\r\nwith {\r\nimg: field_icon,\r\nlabel: field_short_name,\r\nurl: \"/node/\" ~ nid,\r\nlink_variant: 'uppercase'\r\n}\r\n%}"
+            text: "{% include '@components/molecules/image-card--with-sub.twig'\r\nwith {\r\nimg: field_icon,\r\nlabel: field_short_name,\r\nurl: \"/node/\" ~ nid,\r\nlink_variant: 'uppercase',\r\nimage_variant: 'circle-icon',\r\n}\r\n%}"
             make_link: false
             path: ''
             absolute: false
@@ -420,7 +420,7 @@ display:
           admin_label: ''
           empty: false
           tokenize: false
-          content: 'Browse by Theme'
+          content: 'BROWSE BY THEME'
           plugin_id: text_custom
       footer: {  }
       empty: {  }

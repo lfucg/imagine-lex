@@ -2,7 +2,7 @@
     <div class="image-wrapper--card">
     {% if url|length > 0 %}
       <a href="{{ url }}">
-        <img src="{{ img }}" class="img-fluid pb-2" alt="{{ label }}" title="{{ label }}">
+        <img src="{{ img }}" class="img-fluid pb-2 {{ image_variant }}" alt="{{ label }}" title="{{ label }}">
       </a>
       {% include '@components/atoms/subheading-link.twig' with { url: url, label: label } %}
     {% else %}
