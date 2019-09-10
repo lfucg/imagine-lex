@@ -13,6 +13,10 @@
     img.circle-icon {
       height: 125px;
       width: 125px;
+      &:hover {
+        transform: scale(1.1);
+        transition: all .25s ease;
+      }
     }
   }
   .subheading-link {
