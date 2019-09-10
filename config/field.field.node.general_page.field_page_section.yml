@@ -25,25 +25,37 @@ settings:
     target_bundles:
       accordion: accordion
     target_bundles_drag_drop:
-      views_block:
-        weight: 3
+      2_column_grid:
+        weight: -23
         enabled: false
-      video:
-        weight: 4
+      accordion_section:
+        weight: -22
+        enabled: false
+      body_text:
+        weight: -21
+        enabled: false
+      call_to_action:
+        weight: -20
         enabled: false
       full_width_image:
-        weight: 5
+        weight: -19
+        enabled: false
+      iframe:
+        weight: -18
+        enabled: false
+      image_grid_lightbox_images_:
+        weight: -17
+        enabled: false
+      slider:
+        weight: -16
+        enabled: false
+      views_block:
+        weight: -15
+        enabled: false
+      video:
+        weight: -14
         enabled: false
       accordion:
         enabled: true
-        weight: 8
-      accordion_section:
-        weight: 9
-        enabled: false
-      body_text:
-        weight: 10
-        enabled: false
-      iframe:
-        weight: 14
-        enabled: false
+        weight: -13
 field_type: entity_reference_revisions
