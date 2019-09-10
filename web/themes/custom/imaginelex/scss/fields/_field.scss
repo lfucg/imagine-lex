@@ -16,8 +16,6 @@
   }
 }
 
-.field--name-field-page-section {
-  .field__item {
+.field--name-field-page-section > .field__item {
     margin-bottom: 24px;
-  }
 }
