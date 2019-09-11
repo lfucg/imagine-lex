@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.body
     - field.storage.node.field_definition
     - field.storage.node.field_images
+    - image.style.medium
     - node.type.theme
   module:
     - colorbox
@@ -196,14 +197,14 @@ display:
             external: false
             replace_spaces: false
             path_case: none
-            trim_whitespace: false
+            trim_whitespace: true
             alt: ''
             rel: ''
             link_class: ''
             prefix: ''
             suffix: ''
             target: ''
-            nl2br: false
+            nl2br: true
             max_length: 0
             word_boundary: true
             ellipsis: true
@@ -291,7 +292,7 @@ display:
           click_sort_column: target_id
           type: colorbox
           settings:
-            colorbox_node_style: ''
+            colorbox_node_style: medium
             colorbox_node_style_first: ''
             colorbox_image_style: ''
             colorbox_gallery: post
@@ -306,7 +307,7 @@ display:
           delta_reversed: false
           delta_first_last: false
           multi_type: separator
-          separator: ', '
+          separator: ' '
           field_api_classes: false
           plugin_id: field
       filters:
