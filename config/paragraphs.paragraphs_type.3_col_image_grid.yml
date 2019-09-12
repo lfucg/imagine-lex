@@ -1,0 +1,9 @@
+uuid: dbbf323d-72c6-4334-8713-2c8bcd067142
+langcode: en
+status: true
+dependencies: {  }
+id: 3_col_image_grid
+label: '3 Col Image Grid'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

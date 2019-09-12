@@ -1,0 +1,24 @@
+uuid: 6e1b13ae-8066-4add-8d04-119b2a93fab6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.two_column_grid.field_grid_content
+    - paragraphs.paragraphs_type.two_column_grid
+  module:
+    - entity_reference_revisions
+id: paragraph.two_column_grid.default
+targetEntityType: paragraph
+bundle: two_column_grid
+mode: default
+content:
+  field_grid_content:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

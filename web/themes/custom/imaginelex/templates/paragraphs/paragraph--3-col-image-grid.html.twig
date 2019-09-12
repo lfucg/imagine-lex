@@ -1,0 +1,28 @@
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+
+<div{{ attributes.addClass(classes, 'pb-5') }}>
+    {% if content.field_title['#title'] %}
+        {% include '@components/atoms/section-heading.twig'
+        with {
+            level: 2,
+            headline: content.field_title,
+            heading_variant: 'views--header uppercase'
+        }
+        %}
+    {% endif %}
+    <div class="row">
+        {% for item in content.field_image_grid_content['#items'] %}
+            {% set index = loop.index0 %}
+            <div class="col-12 col-sm-4">
+                {{content.field_image_grid_content[index]}}
+            </div>
+        {% endfor %}
+    </div>
+</div>

@@ -1,0 +1,78 @@
+uuid: 96dfcfae-3c88-4d73-bfbc-fbabc2a8395b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_grid_content
+    - paragraphs.paragraphs_type.icon_and_text
+    - paragraphs.paragraphs_type.text_and_image
+    - paragraphs.paragraphs_type.two_column_grid
+  module:
+    - entity_reference_revisions
+id: paragraph.two_column_grid.field_grid_content
+field_name: field_grid_content
+entity_type: paragraph
+bundle: two_column_grid
+label: 'Grid Content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      icon_and_text: icon_and_text
+      text_and_image: text_and_image
+    target_bundles_drag_drop:
+      two_column_grid:
+        weight: 16
+        enabled: false
+      2_column_grid:
+        weight: 17
+        enabled: false
+      3_col_image_grid:
+        weight: 18
+        enabled: false
+      accordion:
+        weight: 19
+        enabled: false
+      accordion_section:
+        weight: 20
+        enabled: false
+      body_text:
+        weight: 21
+        enabled: false
+      call_to_action:
+        weight: 22
+        enabled: false
+      full_width_image:
+        weight: 23
+        enabled: false
+      icon_and_text:
+        enabled: true
+        weight: 24
+      iframe:
+        weight: 25
+        enabled: false
+      image_grid_lightbox_images_:
+        weight: 26
+        enabled: false
+      single_image:
+        weight: 27
+        enabled: false
+      slider:
+        weight: 28
+        enabled: false
+      text_and_image:
+        enabled: true
+        weight: 29
+      video:
+        weight: 29
+        enabled: false
+      views_block:
+        weight: 30
+        enabled: false
+field_type: entity_reference_revisions

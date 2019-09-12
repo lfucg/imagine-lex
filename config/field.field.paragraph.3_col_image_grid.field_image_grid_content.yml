@@ -1,0 +1,76 @@
+uuid: a4881de7-1ec1-4aa4-bf4f-052bec389a7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_grid_content
+    - paragraphs.paragraphs_type.3_col_image_grid
+    - paragraphs.paragraphs_type.single_image_square_
+  module:
+    - entity_reference_revisions
+id: paragraph.3_col_image_grid.field_image_grid_content
+field_name: field_image_grid_content
+entity_type: paragraph
+bundle: 3_col_image_grid
+label: 'Image Grid Content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      single_image_square_: single_image_square_
+    target_bundles_drag_drop:
+      3_col_image_grid:
+        weight: 17
+        enabled: false
+      accordion:
+        weight: 18
+        enabled: false
+      accordion_section:
+        weight: 19
+        enabled: false
+      body_text:
+        weight: 20
+        enabled: false
+      call_to_action:
+        weight: 21
+        enabled: false
+      full_width_image:
+        weight: 22
+        enabled: false
+      icon_and_text:
+        weight: 23
+        enabled: false
+      iframe:
+        weight: 24
+        enabled: false
+      image_grid_lightbox_images_:
+        weight: 25
+        enabled: false
+      single_image:
+        weight: 26
+        enabled: false
+      single_image_square_:
+        enabled: true
+        weight: 27
+      slider:
+        weight: 28
+        enabled: false
+      text_and_image:
+        weight: 29
+        enabled: false
+      two_column_grid:
+        weight: 30
+        enabled: false
+      video:
+        weight: 31
+        enabled: false
+      views_block:
+        weight: 32
+        enabled: false
+field_type: entity_reference_revisions
