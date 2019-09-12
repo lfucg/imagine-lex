@@ -111,6 +111,9 @@ function imaginelex_preprocess_views_accordion_view(&$variables) {
         $variables['accordion_group_color'] = $datas[0]['field_color_value'];
       }
       break;
+    case 'policies_for_rural_developments';
+        $variables['accordion_group_color'] = '#fff';
+      break;
     default:
       break;
   }
