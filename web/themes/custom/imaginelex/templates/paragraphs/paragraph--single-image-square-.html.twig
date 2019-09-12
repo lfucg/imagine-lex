@@ -1,0 +1,18 @@
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+
+
+<div{{ attributes.addClass(classes, 'test') }}>
+    {% include '@components/molecules/image-card--with-sub.twig' with { 
+        label: content.field_heading[0]['#text'], 
+        url: content.field_link[0]['#url'], 
+        img: content.field_image[0]['#markup'], 
+        } 
+    %}
+</div>

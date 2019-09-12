@@ -1,0 +1,9 @@
+uuid: 0c1bb0dc-9203-4824-ab54-ea80cbab6e8b
+langcode: en
+status: true
+dependencies: {  }
+id: single_image_square_
+label: 'Single Image (Square)'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

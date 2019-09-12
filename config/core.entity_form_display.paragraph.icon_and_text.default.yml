@@ -1,19 +1,18 @@
-uuid: 68ad10bd-2725-4dd8-8248-5c51fc67d34b
+uuid: 5ca173ff-47d4-4657-91b1-a8331fb583ff
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.2_column_grid.field_description
-    - field.field.paragraph.2_column_grid.field_heading
-    - field.field.paragraph.2_column_grid.field_image
+    - field.field.paragraph.icon_and_text.field_description
+    - field.field.paragraph.icon_and_text.field_image
     - image.style.thumbnail
-    - paragraphs.paragraphs_type.2_column_grid
+    - paragraphs.paragraphs_type.icon_and_text
   module:
     - image
     - text
-id: paragraph.2_column_grid.default
+id: paragraph.icon_and_text.default
 targetEntityType: paragraph
-bundle: 2_column_grid
+bundle: icon_and_text
 mode: default
 content:
   field_description:
@@ -24,16 +23,8 @@ content:
     third_party_settings: {  }
     type: text_textarea
     region: content
-  field_heading:
-    weight: 0
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textfield
-    region: content
   field_image:
-    weight: 2
+    weight: 0
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail

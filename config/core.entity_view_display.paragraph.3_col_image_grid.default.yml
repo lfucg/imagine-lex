@@ -1,0 +1,33 @@
+uuid: 14e11ddf-ca5c-475c-a835-3e3be3c7f67f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.3_col_image_grid.field_image_grid_content
+    - field.field.paragraph.3_col_image_grid.field_title
+    - paragraphs.paragraphs_type.3_col_image_grid
+  module:
+    - entity_reference_revisions
+id: paragraph.3_col_image_grid.default
+targetEntityType: paragraph
+bundle: 3_col_image_grid
+mode: default
+content:
+  field_image_grid_content:
+    type: entity_reference_revisions_entity_view
+    weight: 3
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

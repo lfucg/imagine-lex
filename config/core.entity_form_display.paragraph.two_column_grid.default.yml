@@ -1,0 +1,29 @@
+uuid: d7cbf191-87d0-4d71-9880-bbf566078d96
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.two_column_grid.field_grid_content
+    - paragraphs.paragraphs_type.two_column_grid
+  module:
+    - paragraphs
+id: paragraph.two_column_grid.default
+targetEntityType: paragraph
+bundle: two_column_grid
+mode: default
+content:
+  field_grid_content:
+    type: entity_reference_paragraphs
+    weight: 0
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

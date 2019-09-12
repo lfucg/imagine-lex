@@ -1,17 +1,17 @@
-uuid: f2529e77-9e43-41a2-ad7c-369e408ebf66
+uuid: 874aca33-77ac-40f4-b7ee-30e3af099a41
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_image
-    - paragraphs.paragraphs_type.2_column_grid
+    - paragraphs.paragraphs_type.icon_and_text
   module:
     - image
-id: paragraph.2_column_grid.field_image
+id: paragraph.icon_and_text.field_image
 field_name: field_image
 entity_type: paragraph
-bundle: 2_column_grid
-label: Image
+bundle: icon_and_text
+label: Icon
 description: ''
 required: false
 translatable: true

@@ -1,17 +1,17 @@
-uuid: 5101043f-350f-4f54-924d-076161b2f24b
+uuid: 23352f98-555a-41dc-b1af-620db75736b3
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_heading
-    - paragraphs.paragraphs_type.2_column_grid
+    - paragraphs.paragraphs_type.single_image_square_
   module:
     - text
-id: paragraph.2_column_grid.field_heading
+id: paragraph.single_image_square_.field_heading
 field_name: field_heading
 entity_type: paragraph
-bundle: 2_column_grid
-label: Heading
+bundle: single_image_square_
+label: Subheading
 description: ''
 required: false
 translatable: true
