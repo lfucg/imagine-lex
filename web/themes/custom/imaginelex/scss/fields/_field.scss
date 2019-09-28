@@ -4,8 +4,10 @@
 }
 
 .field--name-field-bulleted-list {
-  ul {
-    column-count: 2;
+  @media screen and (min-width: 768px){
+    ul {
+      column-count: 2;
+    }
   }
 }
 
