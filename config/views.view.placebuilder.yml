@@ -285,6 +285,7 @@ display:
         style: false
         row: false
         sorts: false
+        css_class: false
       fields:
         field_icon:
           id: field_icon
@@ -614,9 +615,9 @@ display:
           automatic_width: false
           alignment: horizontal
           col_class_default: false
-          col_class_custom: col
-          row_class_default: true
-          row_class_custom: 'text-center row'
+          col_class_custom: 'd-inline-block theme-icon pb-2'
+          row_class_default: false
+          row_class_custom: ''
       row:
         type: fields
         options:
@@ -637,6 +638,7 @@ display:
           expose:
             label: ''
           plugin_id: standard
+      css_class: 'col-lg-8 offset-lg-2 p-0'
     cache_metadata:
       max-age: -1
       contexts:
@@ -1009,7 +1011,7 @@ display:
               rendered: true
               rendered_strip: false
               use-grouping-header: 0
-          row_class: 'col-md col-12'
+          row_class: 'col-md col-12 accordion-view-row'
           default_row_class: false
           disableifone: 0
           row-start-open: '0'
@@ -1028,7 +1030,7 @@ display:
           inline: {  }
           separator: ''
           hide_empty: false
-      css_class: col
+      css_class: 'col-lg-8 offset-lg-2 p-0'
     cache_metadata:
       max-age: -1
       contexts:
