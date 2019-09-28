@@ -46,14 +46,12 @@ content:
     weight: 1
     label: hidden
     settings:
+      autoplay: true
       responsive: true
       width: 854
       height: 480
-      autoplay: true
-      image_style: ''
-      link_image_to: ''
     third_party_settings: {  }
-    type: video_embed_field_lazyload
+    type: video_embed_field_video
     region: content
   field_where_now:
     weight: 2
