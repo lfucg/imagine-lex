@@ -29,3 +29,11 @@
   margin: 0px -45px;
   width: 100vw;
 }
+
+.path-policy {
+  @media screen and (max-width: 768px){
+    .hero--heading {
+      line-height: 1.5rem;
+    }
+  }
+}
