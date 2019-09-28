@@ -640,7 +640,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '<p>{{ body }} <a href="{{ nothing }}">READ MORE >></a></p>'
+            text: '<p>{{ body }} <a href="{{ nothing }}" target="_blank">READ MORE >></a></p>'
             make_link: false
             path: ''
             absolute: false
@@ -867,7 +867,7 @@ display:
           entity_field: nid
           plugin_id: node_nid
       display_extenders: {  }
-      css_class: 'pt-5 px-5'
+      css_class: 'pt-md-5 px-md-5 p-2'
     cache_metadata:
       max-age: -1
       contexts:

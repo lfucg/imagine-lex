@@ -32,6 +32,9 @@ a.show.active {
   font-weight: bold;
   text-decoration: underline;
   text-decoration-color: black;
+  img {
+    transform: scale(1.1);
+  }
 }
 
 #backtotop {
