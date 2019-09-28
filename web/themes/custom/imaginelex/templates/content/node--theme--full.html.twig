@@ -70,6 +70,7 @@
     not node.isPublished() ? 'node--unpublished',
     view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
     'clearfix',
+    'col-lg-10 offset-lg-1',
   ]
 %}
 <article{{ attributes.addClass(classes) }}>
@@ -100,9 +101,9 @@
     heading_variant: 'views--header uppercase'
   }
 %}
-  <ul class="nav" id="pillarTabs" role="tablist">
+  <ul class="nav justify-content-center" id="pillarTabs" role="tablist">
     {% for pillar in node.field_pillars %}
-      <li class="nav-item nav-fill col">
+      <li class="nav-item nav-fill px-md-5 px-2">
         <a
           class="nav-link"
           id="{{- pillar.entity.title.value|lower ~ "-tab" }}"

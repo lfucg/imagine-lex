@@ -28,6 +28,12 @@ div#block-imaginelex-branding {
   margin: 0;
 }
 
+a.show.active {
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+
 #backtotop {
   background: url(../images/backtotop.png) no-repeat center center;
   background-size: 70px 85px;
