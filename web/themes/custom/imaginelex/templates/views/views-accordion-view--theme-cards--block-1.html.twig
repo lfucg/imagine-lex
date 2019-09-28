@@ -18,9 +18,12 @@
 
 {% import '@components/colors.twig' as helpers %}
 
+{% set outi = value %}
+
 {% if title %}
   <h3 class="js-views-accodion-group-header w-100 px-3 py-1{{ accordion_group_color ? ' slab--' ~ helpers.colorFinder(accordion_group_color) }}">{{ title }}</h3>
 {% endif %}
+<ul>
 {% for row in rows %}
   {%
     set row_classes = [
@@ -28,7 +31,8 @@
     ]
   %}
   {# A div wrapping the row content is required for the accordion to work #}
-  <div{{ row.attributes.addClass(row_classes) }}>
+  <li{{ row.attributes.addClass(row_classes) }}>
     {{ row.content }}
-  </div>
+  </li>
 {% endfor %}
+</ul>

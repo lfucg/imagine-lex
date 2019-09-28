@@ -76,7 +76,7 @@ display:
           animation_time: '300'
           heightStyle: content
           event: click
-          use_header_icons: 0
+          use_header_icons: 1
           icon_header: ui-icon-triangle-1-e
           icon_active_header: ui-icon-triangle-1-s
       row:

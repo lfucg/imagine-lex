@@ -1,0 +1,11 @@
+.views-view-grid {
+  div {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    @media screen and (max-width: 500px) {
+      flex-direction: column;
+    }
+  }
+}
+

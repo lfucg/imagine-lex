@@ -31,3 +31,23 @@
   border-radius: 50px;
   border: solid 5px;
 }
+
+.accordion-view-row {
+  @media screen and (max-width: 500px) {
+    padding: 0 0 16px 0;
+  }
+}
+
+.view-id-theme_cards .view-display-id-block_1 {
+  .view-content > ul {
+    padding-inline-start: 0;
+    & > li {
+      display: inline-block;
+    }
+    .ui-accordion-content {
+      li {
+        list-style-type: lower-alpha;
+      }
+    }
+  }
+}
