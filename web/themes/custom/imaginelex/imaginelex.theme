@@ -1,6 +1,7 @@
 <?php
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\taxonomy\Entity\Term;
+use Drupal\node\Entity\Node;
 
 /**
  * Implements hook_theme_suggestions_page_alter().
@@ -20,34 +21,35 @@ function imaginelex_theme_suggestions_page_alter(array &$suggestions, array $var
  * Implements hook_preprocess_page().
  */
 function imaginelex_preprocess_page(&$variables) {
+
+  $node = \Drupal::routeMatch()->getParameter('node');
+  if ($node && $node->bundle() == 'policy') { // check for only policy nodes
+    $heroId = 0;
+    if ($tid = \Drupal::request()->get('topic')) { // if coming from topic accordion get the topic tax term
+      $topic = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->load($tid);
+      $heroId = $topic->field_hero_image[0]->target_id;
+    } else if ($tid = \Drupal::request()->get('theme')) { // if coming from a theme accordion get the theme node
+      $theme = \Drupal::entityTypeManager()->getStorage('node')->load($tid);
+      $heroId = $theme->field_image[0]->target_id;
+    }
+
+    if ($heroId) { // check for the hero variable
+      $file = \Drupal\file\Entity\File::load($heroId);
+      $uri = $file->getFileUri();
+      $variables['policy_hero'] = $uri; // get the hero image that corresponds
+    }
+
+    $variables['title'] = $node->get('field_short_name')->value;
+    $variables['policy_name'] = $node->get('field_short_name')->value;
+  }
+
   if (\Drupal::routeMatch()->getRouteName() == 'entity.taxonomy_term.canonical' && $tid = \Drupal::routeMatch()->getRawParameter('taxonomy_term')) {
     $term = Term::load($tid);
     $variables['term'] = $term;
   }
-  if ($view_id = \Drupal::routeMatch()->getParameter('view_id')) {
-    $args = [
-      \Drupal::routeMatch()->getParameter('arg_0'),
-      \Drupal::routeMatch()->getParameter('arg_1'),
-      \Drupal::routeMatch()->getParameter('arg_2')
-    ];
 
-    $view = \Drupal\views\Views::getView($view_id);
-    $view->setDisplay('default');
-    $view->setArguments($args);
-    $view->execute();
-    $view_result = $view->result;
-    if (!empty($view_result)) {
-      foreach ($view->result as $row) {
-        $hero = $row->_entity->field_image[0]->target_id;
-        $file = \Drupal\file\Entity\File::load($hero);
-        $uri = $file->getFileUri();
-        $variables['policy_hero'] = $uri;
-        $variables['policy_name'] = $row->_relationship_entities['field_policies']->field_short_name->value;
-        $variables['title'] = $row->_relationship_entities['field_policies']->field_short_name->value;
-      }
-    }
-  };
 }
+
 /**
  * Implements hook_preprocess_views_view_fields().
  */
@@ -128,3 +130,40 @@ function imaginelex_preprocess_node(&$variables) {
   };
 }
 
+/**
+ * Implements hook_preprocess_views_view_field().
+ */
+function imaginelex_preprocess_views_view_field(&$variables) {
+  if ($variables['view']->id() == 'taxonomy_term' && $variables['field']->field == 'body') {
+    $output = $variables['field']->getValue($variables['row']);
+    $variables['output'] = ['#markup'=> sentenceTrim($output, 400)];
+  }
+}
+
+// helper function to trim to 300 character at the nearest .
+function sentenceTrim($string, $maxLength = 300) {
+  $string = preg_replace('/\s+/', ' ', trim($string)); // Replace new lines (optional)
+
+  if (mb_strlen($string) >= $maxLength) {
+      $string = mb_substr($string, 0, $maxLength);
+
+      $puncs  = array('. ', '! ', '? '); // Possible endings of sentence
+      $maxPos = 0;
+
+      foreach ($puncs as $punc) {
+          $pos = mb_strrpos($string, $punc);
+
+          if ($pos && $pos > $maxPos) {
+              $maxPos = $pos;
+          }
+      }
+
+      if ($maxPos) {
+          return mb_substr($string, 0, $maxPos + 1);
+      }
+
+      return rtrim($string) . '&hellip;';
+  } else {
+      return $string;
+  }
+}
