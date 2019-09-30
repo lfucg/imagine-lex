@@ -1,0 +1,5 @@
+name: IL Utils
+description: Utilities for the site
+package: Custom
+type: module
+core: 8.x
