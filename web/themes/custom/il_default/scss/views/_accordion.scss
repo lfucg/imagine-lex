@@ -1,0 +1,55 @@
+.ui-accordion {
+  border-radius: 0;
+}
+
+.ui-state-active, .ui-state-default {
+  color:white;
+  &.paragraph-accordion {
+    background-color: #cccccc;
+    a {
+      color: #454545;
+      &:hover {
+        color: #5c5c5c;
+      }
+    }
+  }
+
+  &:active, &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    color: #d8d8d8
+  }
+}
+
+.ui-state-active {
+  border-color: #c5c5c5;
+}
+
+#pillarTabsContent {
+  @media screen and (min-width: 768px){
+    border-radius: 50px;
+    border: solid 5px;
+  }
+}
+
+.accordion-view-row {
+  @media screen and (max-width: 500px) {
+    padding: 0 0 16px 0;
+  }
+}
+
+.view-id-theme_cards .view-display-id-block_1 {
+  .view-content > ul {
+    padding-inline-start: 0;
+    & > li {
+      display: inline-block;
+    }
+    .ui-accordion-content {
+      li {
+        list-style-type: lower-alpha;
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+<?php
+
+use Drupal\node\Entity\Node;
+
+
+/**
+ * populates alias field for policies
+ */
+function il_utils_post_update_8001() {
+  $query = \Drupal::entityQuery('node')
+    ->condition('type', 'policy')
+    ->execute();
+
+  foreach ($query as $nid) {
+    $node = Node::load($nid);
+    $alias = str_replace(' ', '-', strtolower($node->field_short_name->value));
+    if (empty($node->path['alias'])) {
+      $node->path->alias = '/' . $alias;
+    }
+    $node->save();
+  };
+}

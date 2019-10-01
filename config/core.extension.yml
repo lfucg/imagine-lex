@@ -35,8 +35,9 @@ module:
   filter: 0
   help: 0
   history: 0
+  il_utils: 0
+  imaginelex_module: 0
   image: 0
-  imaginelex: 0
   imce: 0
   inline_entity_form: 0
   layout_builder: 0
@@ -81,6 +82,7 @@ theme:
   seven: 0
   adminimal_theme: 0
   imaginelex: 0
+  il_default: 0
   bootstrap_barrio: 0
 profile: standard
 _core:

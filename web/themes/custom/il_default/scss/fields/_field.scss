@@ -1,0 +1,41 @@
+.node .field--type-image {
+  float: none;
+  text-align: center;
+}
+
+.field--name-field-bulleted-list {
+  @media screen and (min-width: 768px){
+    ul {
+      column-count: 2;
+    }
+  }
+}
+
+
+.field--name-field-featured-image {
+  img {
+     border: 3px solid black;
+  }
+}
+
+.field--name-field-page-section > .field__item {
+    margin-bottom: 24px;
+}
+
+.field--type-video-embed-field {
+  max-width: 800px;
+  margin: auto;
+}
+
+.paragraph--type--full-width-image {
+  margin: 0px -45px;
+  width: 100vw;
+}
+
+.path-policy {
+  @media screen and (max-width: 768px){
+    .hero--heading {
+      line-height: 1.5rem;
+    }
+  }
+}

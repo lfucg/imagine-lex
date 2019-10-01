@@ -1,0 +1,19 @@
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+
+<div{{ attributes.addClass(classes, 'pb-5') }}>
+  {% include '@components/atoms/section-heading.twig'
+    with {
+      level: 2,
+      headline: content.field_title,
+      heading_variant: 'views--header uppercase'
+    }
+  %}
+  {{ content.field_images }}
+</div>

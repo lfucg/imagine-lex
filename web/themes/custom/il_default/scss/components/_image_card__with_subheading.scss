@@ -1,0 +1,14 @@
+.image-with-subheading {
+  display: flex;
+  flex-direction: column;
+
+    img.circle-icon {
+      &:hover {
+        transform: scale(1.1);
+        transition: all .25s ease;
+      }
+    }
+    .subheading-link {
+      height: 25%;
+    }
+}
