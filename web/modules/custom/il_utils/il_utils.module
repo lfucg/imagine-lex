@@ -1,6 +1,7 @@
 <?php
 
 use Drupal\node\Entity\Node;
+use Drupal\Core\Form\FormStateInterface;
 
 
 /**
@@ -19,4 +20,23 @@ function il_utils_post_update_8001() {
     }
     $node->save();
   };
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function il_utils_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  if ($form_id === 'node_general_page_form' || $form_id == 'node_general_page_edit_form') {
+    $form['field_hero_image']['#states'] = [
+      'visible' => [
+        'select[name="field_hero_type"]' => ['value' => 'image'],
+      ]
+    ];
+    $form['field_hero_vid']['#states'] = [
+      'visible' => [
+        'select[name="field_hero_type"]' => ['value' => 'video'],
+      ],
+    ];
+  }
+
 }
