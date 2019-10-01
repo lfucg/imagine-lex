@@ -1,0 +1,44 @@
+.field_recommended_zones__item {
+  border: 3px solid black;
+  border-radius: 50%;
+  font-size: 30px;
+  height: 100px;
+  margin: 15px;
+  line-height: 100px;
+  text-align: center;
+  width: 100px;
+
+  a {
+    color: black;
+
+    &:hover {
+      color: color(dark-gray);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .field--name-field-development-types, .field--name-field-recommended-zones {
+    .slab {
+      flex-direction: column;
+      .field_development_types__item {
+        max-width: none;
+      }
+    }
+  }
+
+  .field_recommended_zones__item {
+    margin: 10px auto;
+  }
+}
+
+.field_development_types__item {
+  max-width: 33%;
+}
+
+.slick-arrow::before {
+  color: color(il-blue);
+  &:hover::before {
+    color: color(dark-gray);
+  }
+}

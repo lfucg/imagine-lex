@@ -1,0 +1,7 @@
+.link--dark-gray {
+  color: color(dark-gray);
+  text-transform: uppercase;
+  &:hover {
+    color: black;
+  }
+}

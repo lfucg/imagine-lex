@@ -1,0 +1,22 @@
+uuid: f4b03716-285e-4527-983b-56ec893ea677
+langcode: en
+status: true
+dependencies:
+  theme:
+    - il_default
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: il_default_local_tasks
+theme: il_default
+region: content
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

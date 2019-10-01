@@ -1,0 +1,10 @@
+{% extends "paragraph.html.twig" %}
+
+{% block paragraph %}
+  <div{{ attributes.addClass(classes, 'text-center') }}>
+    {% block content %}
+      {{ content }}
+      {% include '@components/atoms/subheading.twig' with { label: 'CLICK TO ENLARGE' } %}
+    {% endblock %}
+  </div>
+{% endblock paragraph %}
