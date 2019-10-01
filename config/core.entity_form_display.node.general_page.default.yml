@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.general_page.body
     - field.field.node.general_page.field_category
     - field.field.node.general_page.field_hero_image
+    - field.field.node.general_page.field_hero_vid
     - field.field.node.general_page.field_page_section
     - image.style.thumbnail
     - node.type.general_page
@@ -50,6 +51,15 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+    region: content
+  field_hero_vid:
+    weight: 28
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   field_page_section:
     type: paragraphs

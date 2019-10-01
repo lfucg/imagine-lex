@@ -17,6 +17,7 @@
 
 .header-btn {
   font-size: 25px;
+  margin-top: 10px;
 }
 
 .header-btn > i {
@@ -51,11 +52,25 @@
 
 .header-logo {
   display: inline-block;
-  margin: 5px 20px 0 0;
 }
 
 .header-logos {
   text-align: center;
+}
+
+.header-img {
+  max-height: 50px;
+  display: block;
+  margin: auto;
+}
+
+.header-icon {
+  text-align: right;
+  font-size: 25px;
+  margin-top: 11px;
+  a {
+    color: black;
+  }
 }
 
 .imagine-logo > .header-triangle {
@@ -93,10 +108,6 @@
   outline: none !important;
 }
 
-.header-btn {
-  padding-left: 0 !important;
-}
-
 @media (max-width: 576px) {
   .header-contact {
     display: none;
@@ -106,5 +117,15 @@
   }
   .header-container {
     margin: 0;
+  }
+}
+
+.sticky-header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.125);
+  nav {
+    padding: 0;
   }
 }

@@ -1,0 +1,28 @@
+uuid: 3a2763a5-557a-461d-ba35-252582d8249d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero_vid
+    - media.type.video
+    - node.type.general_page
+id: node.general_page.field_hero_vid
+field_name: field_hero_vid
+entity_type: node
+bundle: general_page
+label: 'Hero Vid'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      video: video
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
