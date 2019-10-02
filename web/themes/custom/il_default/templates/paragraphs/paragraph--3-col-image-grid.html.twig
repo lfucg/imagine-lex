@@ -7,7 +7,7 @@
   ]
 %}
 
-<div{{ attributes.addClass(classes, 'pb-5') }}>
+<div{{ attributes.addClass(classes, 'pb-5 col-lg-8 offset-lg-2') }}>
     {% if content.field_title['#title'] %}
         {% include '@components/atoms/section-heading.twig'
         with {
