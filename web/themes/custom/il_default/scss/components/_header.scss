@@ -5,6 +5,16 @@
   background-color: white;
   height: 50px;
   border: 1px solid white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.125);
+  -webkit-transition:  .75s;
+  -moz-transition:  .75s;
+  -o-transition:  .75s;
+  -ms-transition:  .75s;
+  transition: .75s;
 }
 
 .header-container {
@@ -121,11 +131,17 @@
 }
 
 .sticky-header {
-  position: fixed;
-  width: 100%;
-  z-index: 100;
-  box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.125);
   nav {
     padding: 0;
   }
 }
+
+.user-logged-in .headernav {
+  margin-top: 36px;
+}
+
+.toolbar-tray-open .headernav {
+  margin-top: 75px;
+}
+
+
