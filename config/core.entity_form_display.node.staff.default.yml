@@ -36,12 +36,10 @@ content:
     type: image_image
     region: content
   field_staff_department:
-    weight: 3
-    settings:
-      size: 60
-      placeholder: ''
+    weight: 27
+    settings: {  }
     third_party_settings: {  }
-    type: text_textfield
+    type: options_select
     region: content
   field_staff_photo:
     weight: 1

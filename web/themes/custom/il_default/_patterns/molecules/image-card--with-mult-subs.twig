@@ -1,0 +1,15 @@
+<div class="image-with-subheading text-center">
+    <div class="image-wrapper--card d-inline">
+      {% if url|length > 0 %}
+      <a href="{{ url }}">
+      {% endif %}
+        <img src="{{ img }}" class="img-fluid pb-2 {{ image_variant }}" alt="{{ label }}" title="{{ label }}">
+      </a>
+    {% if first|length > 0 %}
+        {% include '@components/atoms/subheading.twig' with { label: first } %}
+    {% endif %}
+    {% if second|length > 0 %}
+        {% include '@components/atoms/subheading.twig' with { label: second } %}
+    {% endif %}
+    </div>
+</div>
