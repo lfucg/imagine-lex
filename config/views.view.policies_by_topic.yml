@@ -71,8 +71,8 @@ display:
           heightStyle: auto
           event: click
           use_header_icons: 1
-          icon_header: ui-icon-triangle-1-e
-          icon_active_header: ui-icon-triangle-1-s
+          icon_header: ui-icon-caret-1-e
+          icon_active_header: ui-icon-caret-1-s
       row:
         type: fields
       fields:

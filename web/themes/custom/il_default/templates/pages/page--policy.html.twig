@@ -10,6 +10,13 @@
           head: policy_name,
         }
       %}
+    {% else %}
+      {% include '@components/molecules/hero-with-title.twig'
+        with {
+          imgsrc: 'https://imagine-lex.lndo.site/sites/default/files/styles/hero_image/public/2019-09/IL_hero.png?itok=cDjXhRsG',
+          head: policy_name,
+        }
+      %}
     {% endif %}
     {{ page.breadcrumb }}
     <div class="row row-offcanvas row-offcanvas-left clearfix">
