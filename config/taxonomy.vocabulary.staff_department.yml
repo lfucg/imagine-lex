@@ -1,0 +1,8 @@
+uuid: 99acccc5-4710-4d29-bb01-bfe59b7060f0
+langcode: en
+status: true
+dependencies: {  }
+name: 'Staff Department'
+vid: staff_department
+description: ''
+weight: 0

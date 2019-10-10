@@ -36,12 +36,13 @@ content:
     type: image_image
     region: content
   field_staff_department:
-    weight: 3
+    weight: 27
     settings:
+      match_operator: CONTAINS
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: text_textfield
+    type: entity_reference_autocomplete
     region: content
   field_staff_photo:
     weight: 1

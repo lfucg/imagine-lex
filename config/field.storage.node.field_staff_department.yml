@@ -1,17 +1,17 @@
-uuid: 7e3831b5-8101-4587-8998-0c045b7680cb
+uuid: 9799879e-23b5-4a45-97b4-ee2fb7fd507d
 langcode: en
 status: true
 dependencies:
   module:
     - node
-    - text
+    - taxonomy
 id: node.field_staff_department
 field_name: field_staff_department
 entity_type: node
-type: text
+type: entity_reference
 settings:
-  max_length: 255
-module: text
+  target_type: taxonomy_term
+module: core
 locked: false
 cardinality: 1
 translatable: true
