@@ -1,12 +1,11 @@
-uuid: 76c0c041-07cb-40af-9844-d94f5d5e741e
+uuid: 05f9a1fd-b442-4b45-9c63-ebd4d0698090
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_staff_department
     - node.type.staff
-  module:
-    - options
+    - taxonomy.vocabulary.staff_department
 id: node.staff.field_staff_department
 field_name: field_staff_department
 entity_type: node
@@ -17,5 +16,14 @@ required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {  }
-field_type: list_string
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      staff_department: staff_department
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

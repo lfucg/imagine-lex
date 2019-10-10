@@ -11,7 +11,6 @@ dependencies:
     - node.type.staff
   module:
     - image
-    - options
     - text
     - user
 id: node.staff.default
@@ -37,10 +36,11 @@ content:
     region: content
   field_staff_department:
     weight: 107
-    label: hidden
-    settings: {  }
+    label: above
+    settings:
+      link: true
     third_party_settings: {  }
-    type: list_default
+    type: entity_reference_label
     region: content
   field_staff_photo:
     weight: 103

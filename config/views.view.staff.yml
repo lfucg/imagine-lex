@@ -7,10 +7,14 @@ dependencies:
     - field.storage.node.field_staff_position
     - image.style.thumbnail
     - node.type.staff
+    - taxonomy.vocabulary.staff_department
+  content:
+    - 'taxonomy_term:staff_department:1e50b75d-c8e3-4443-9b57-440439fcd1f5'
+    - 'taxonomy_term:staff_department:fdbca159-721c-4481-afe5-0356ae90c708'
   module:
     - image
     - node
-    - options
+    - taxonomy
     - text
     - user
 id: staff
@@ -509,16 +513,16 @@ display:
           entity_type: node
           entity_field: type
           plugin_id: bundle
-        field_staff_department_value:
-          id: field_staff_department_value
+        field_staff_department_target_id:
+          id: field_staff_department_target_id
           table: node__field_staff_department
-          field: field_staff_department_value
+          field: field_staff_department_target_id
           relationship: none
           group_type: group
           admin_label: ''
           operator: or
           value:
-            'Long Range Planning Staff': 'Long Range Planning Staff'
+            - 71
           group: 1
           exposed: false
           expose:
@@ -547,7 +551,12 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          plugin_id: list_field
+          type: textfield
+          limit: true
+          vid: staff_department
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
       defaults:
         filters: false
         filter_groups: false
@@ -575,6 +584,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:
@@ -614,16 +624,16 @@ display:
           entity_type: node
           entity_field: type
           plugin_id: bundle
-        field_staff_department_value:
-          id: field_staff_department_value
+        field_staff_department_target_id:
+          id: field_staff_department_target_id
           table: node__field_staff_department
-          field: field_staff_department_value
+          field: field_staff_department_target_id
           relationship: none
           group_type: group
           admin_label: ''
           operator: or
           value:
-            'The Planning Commission': 'The Planning Commission'
+            72: 72
           group: 1
           exposed: false
           expose:
@@ -652,7 +662,12 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          plugin_id: list_field
+          type: select
+          limit: true
+          vid: staff_department
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
       filter_groups:
         operator: AND
         groups:
@@ -676,6 +691,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:

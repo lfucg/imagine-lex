@@ -1,24 +1,17 @@
-uuid: cd72f133-1864-4bc7-963b-83aedb6305dd
+uuid: 9799879e-23b5-4a45-97b4-ee2fb7fd507d
 langcode: en
 status: true
 dependencies:
   module:
     - node
-    - options
+    - taxonomy
 id: node.field_staff_department
 field_name: field_staff_department
 entity_type: node
-type: list_string
+type: entity_reference
 settings:
-  allowed_values:
-    -
-      value: 'Long Range Planning Staff'
-      label: 'Long Range Planning Staff'
-    -
-      value: 'The Planning Commission'
-      label: 'The Planning Commission'
-  allowed_values_function: ''
-module: options
+  target_type: taxonomy_term
+module: core
 locked: false
 cardinality: 1
 translatable: true
