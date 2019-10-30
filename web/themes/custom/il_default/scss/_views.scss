@@ -75,9 +75,18 @@
   text-transform: uppercase;
 }
 
-.theme-icon > img {
-  margin-right: 10px;
-  max-width: 100px;
+.theme-icon {
+  & > img {
+    margin-right: 10px;
+    max-width: 100px;
+  }
+  .image-with-subheading {
+    width: 200px;
+    .subheading-link {
+      max-width: 100%;
+    }
+  }
+
 }
 
 .pillar-content > img {
