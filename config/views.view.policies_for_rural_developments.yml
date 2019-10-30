@@ -71,7 +71,7 @@ display:
           collapsible: 1
           animated: linear
           animation_time: '300'
-          heightStyle: auto
+          heightStyle: content
           event: click
           use_header_icons: 1
           icon_header: ui-icon-caret-1-e
@@ -271,7 +271,7 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
-      css_class: col
+      css_class: 'col-lg-8 offset-lg-2 p-0 col-12'
     cache_metadata:
       max-age: -1
       contexts:
