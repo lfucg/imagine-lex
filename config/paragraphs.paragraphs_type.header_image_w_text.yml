@@ -1,0 +1,9 @@
+uuid: 414e498b-6ed1-4669-b9fb-183d641c36d9
+langcode: en
+status: true
+dependencies: {  }
+id: header_image_w_text
+label: 'Header Image w/ Text'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

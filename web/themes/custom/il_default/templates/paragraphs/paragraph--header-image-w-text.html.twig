@@ -1,0 +1,5 @@
+<div{{ attributes.addClass(classes, 'slab flex-column mb-5 theme-card') }}>
+    <div class="theme-card-header d-flex flex-column" style="background: url({{ file_url(content.field_image[0]['#item'].entity.uri.value) }});">
+      <h3 class="font-20cen__bold uppercase pl-3 mb-0 text-center mt-auto">{{content.field_heading[0]['#text']}}</h4>
+    </div>
+</div>

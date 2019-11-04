@@ -1,0 +1,39 @@
+uuid: c2436e95-42bf-4241-aa7b-1dc1d8b33759
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.header_image_w_text.field_heading
+    - field.field.paragraph.header_image_w_text.field_image
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.header_image_w_text
+  module:
+    - image
+    - imce
+    - text
+id: paragraph.header_image_w_text.default
+targetEntityType: paragraph
+bundle: header_image_w_text
+mode: default
+content:
+  field_heading:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_image:
+    weight: 0
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    third_party_settings:
+      imce:
+        enabled: true
+    type: image_image
+    region: content
+hidden:
+  created: true
+  status: true
