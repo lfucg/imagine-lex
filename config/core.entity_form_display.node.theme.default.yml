@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.theme.field_icon
     - field.field.node.theme.field_image
     - field.field.node.theme.field_link
+    - field.field.node.theme.field_metatag
     - field.field.node.theme.field_pillars
     - field.field.node.theme.field_short_name
     - field.field.node.theme.field_video
@@ -21,6 +22,7 @@ dependencies:
     - image
     - inline_entity_form
     - link
+    - metatag
     - path
     - text
     - video_embed_field
@@ -86,6 +88,12 @@ content:
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
+    region: content
+  field_metatag:
+    weight: 27
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_firehose
     region: content
   field_pillars:
     weight: 9

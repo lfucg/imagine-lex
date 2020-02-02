@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.theme.field_icon
     - field.field.node.theme.field_image
     - field.field.node.theme.field_link
+    - field.field.node.theme.field_metatag
     - field.field.node.theme.field_pillars
     - field.field.node.theme.field_short_name
     - field.field.node.theme.field_video
@@ -19,6 +20,7 @@ dependencies:
   module:
     - image
     - link
+    - metatag
     - text
     - user
     - video_embed_field
@@ -55,6 +57,13 @@ content:
       rel: '0'
       target: '0'
     third_party_settings: {  }
+  field_metatag:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
   field_video:
     weight: 1
     label: hidden

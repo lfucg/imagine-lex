@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.policy.field_file
     - field.field.node.policy.field_goals
     - field.field.node.policy.field_images
+    - field.field.node.policy.field_metatag
     - field.field.node.policy.field_objectives
     - field.field.node.policy.field_policy_number
     - field.field.node.policy.field_short_name
@@ -20,6 +21,7 @@ dependencies:
     - file
     - image
     - imce
+    - metatag
     - path
     - text
 id: node.policy.default
@@ -84,6 +86,12 @@ content:
       imce:
         enabled: true
     type: image_image
+    region: content
+  field_metatag:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_firehose
     region: content
   field_objectives:
     weight: 9

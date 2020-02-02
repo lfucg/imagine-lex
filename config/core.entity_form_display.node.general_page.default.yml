@@ -8,11 +8,13 @@ dependencies:
     - field.field.node.general_page.field_hero_image
     - field.field.node.general_page.field_hero_type
     - field.field.node.general_page.field_hero_vid
+    - field.field.node.general_page.field_metatag
     - field.field.node.general_page.field_page_section
     - image.style.thumbnail
     - node.type.general_page
   module:
     - image
+    - metatag
     - paragraphs
     - path
     - text
@@ -67,6 +69,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
+  field_metatag:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_firehose
     region: content
   field_page_section:
     type: paragraphs

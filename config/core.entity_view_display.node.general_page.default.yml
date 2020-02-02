@@ -8,11 +8,13 @@ dependencies:
     - field.field.node.general_page.field_hero_image
     - field.field.node.general_page.field_hero_type
     - field.field.node.general_page.field_hero_vid
+    - field.field.node.general_page.field_metatag
     - field.field.node.general_page.field_page_section
     - node.type.general_page
   module:
     - entity_reference_revisions
     - layout_builder
+    - metatag
     - text
     - user
 third_party_settings:
@@ -30,6 +32,13 @@ content:
     weight: 0
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_metatag:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
     region: content
   field_page_section:
     type: entity_reference_revisions_entity_view
