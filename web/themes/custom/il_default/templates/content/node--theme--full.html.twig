@@ -91,7 +91,7 @@
         heading_variant: 'views--header uppercase'
       }
     %}
-    {{ content|without('field_color', 'field_pillars', 'field_icon') }}
+    {{ content|without('field_color', 'field_pillars', 'field_icon', 'field_link') }}
   </div>
 
 {% include '@components/atoms/section-heading.twig'
@@ -134,6 +134,11 @@
       {% endfor %}
     </div>
   </ul>
+  <div class="row text-center">
+      <a href="{{content.field_link[0]['#url']}}" class="w-100 text-center uppercase">
+        <h2 class="w-100 text-center">LINK TO COMPREHENSIVE PLAN</h2>
+      </a>
+  </div>
   <div class="themes-icons">
     {{ drupal_view('theme_icons', 'block_1') }}
   </div>

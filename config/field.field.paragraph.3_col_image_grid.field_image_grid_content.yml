@@ -49,6 +49,9 @@ settings:
       iframe:
         weight: 24
         enabled: false
+      header_image_w_text:
+        weight: 24
+        enabled: false
       image_grid_lightbox_images_:
         weight: 25
         enabled: false

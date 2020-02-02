@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.paragraph.slider.field_images
     - field.field.paragraph.slider.field_title
+    - image.style.slick_media
     - paragraphs.paragraphs_type.slider
   module:
     - slick
@@ -14,31 +15,31 @@ bundle: slider
 mode: default
 content:
   field_images:
-    weight: 1
+    weight: 2
     label: hidden
     settings:
-      style: grid
-      optionset: default
+      style: ''
+      optionset: dots
       optionset_thumbnail: ''
       skin: classic
-      skin_thumbnail: asnavfor
-      image_style: ''
-      thumbnail_effect: hover
+      skin_thumbnail: ''
+      image_style: slick_media
+      thumbnail_effect: ''
       thumbnail_position: ''
       media_switch: ''
       box_style: ''
       thumbnail_style: ''
-      ratio: fluid
+      ratio: ''
       box_caption: ''
       box_caption_custom: ''
       grid: null
       grid_medium: null
       grid_small: null
       visible_items: null
-      layout: ''
+      layout: bottom
       thumbnail_caption: ''
       cache: 0
-      sizes: ''
+      sizes: 'min-width: 940px'
       breakpoints:
         xs:
           image_style: ''

@@ -4,8 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.two_column_grid.field_grid_content
+    - field.field.paragraph.two_column_grid.field_link
     - paragraphs.paragraphs_type.two_column_grid
   module:
+    - link
     - paragraphs
 id: paragraph.two_column_grid.default
 targetEntityType: paragraph
@@ -23,6 +25,14 @@ content:
       form_display_mode: default
       default_paragraph_type: ''
     third_party_settings: {  }
+    region: content
+  field_link:
+    weight: 1
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
     region: content
 hidden:
   created: true

@@ -4,9 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.two_column_grid.field_grid_content
+    - field.field.paragraph.two_column_grid.field_link
     - paragraphs.paragraphs_type.two_column_grid
   module:
     - entity_reference_revisions
+    - link
 id: paragraph.two_column_grid.default
 targetEntityType: paragraph
 bundle: two_column_grid
@@ -20,5 +22,17 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    region: content
+  field_link:
+    weight: 1
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
     region: content
 hidden: {  }
