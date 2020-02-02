@@ -49,7 +49,7 @@ display:
         options:
           perm: 'access content'
       cache:
-        type: tag
+        type: none
         options: {  }
       exposed_form:
         type: basic
@@ -887,7 +887,7 @@ display:
           click_sort_column: value
           type: text_trimmed
           settings:
-            trim_length: 300
+            trim_length: 750
           group_column: value
           group_columns: {  }
           group_rows: true
